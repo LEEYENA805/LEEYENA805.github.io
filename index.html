@@ -613,18 +613,14 @@
       flex-wrap:wrap;
       margin-top:10px
     }
-
-    /* 프로젝트 모달 스크롤 */
     #projectModal{
       overflow-y:auto;
       align-items:center;
     }
-
     #projectModal .modal-box{
       max-height:90vh;
       overflow-y:auto;
     }
-
     @media(max-width:850px){
       .hero{
         grid-template-columns:1fr
@@ -736,8 +732,2475 @@
 
 <body>
 
-<!-- 이하 HTML과 JavaScript는 기존 코드 그대로 사용 -->
+<main class="wrap">
+
+  <header class="top">
+    <div class="brand">디지털 진로 포트폴리오</div>
+
+    <div class="top-actions">
+      <button class="btn" id="toggleEdit">✎ 글 편집</button>
+      <button type="button" class="btn" id="manageLinks" onclick="openLinks()">🔗 링크 관리</button>
+      <button class="btn" id="copyPage">🔗 포트폴리오 링크 복사</button>
+      <button class="btn" id="editProfile">☻ 프로필 수정</button>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+
+    <aside class="side">
+
+      <div class="avatar">
+        <img id="sidePhoto" alt="프로필 사진">
+        <span id="sideFallback">◯</span>
+      </div>
+
+      <button class="navlink active" data-go="home">HOME</button>
+      <button class="navlink" data-go="about">소개</button>
+      <button class="navlink" data-go="career">진로활동</button>
+      <button class="navlink" data-go="skills">주요활동/스킬</button>
+      <button class="navlink" data-go="projects">프로젝트</button>
+      <button class="navlink" data-go="growth">성장과정</button>
+      <button class="navlink" data-go="future">앞으로의 계획</button>
+      <button class="navlink" data-go="contact">CONTACT</button>
+
+    </aside>
+
+    <div class="hero-main">
+
+      <span class="spark s1">✧</span>
+      <span class="spark s2">✦</span>
+
+      <div class="eyebrow">HELLO, I'M</div>
+
+      <h1 class="name" id="heroName">OOO</h1>
+
+      <div class="role" id="heroRole">
+        AI &amp; SOFTWARE<br>
+        DEVELOPER
+      </div>
+
+      <button class="btn" data-go="about">
+        ABOUT ME&nbsp; ›
+      </button>
+
+      <div class="doodle">💻</div>
+
+    </div>
+  </section>
+
+
+  <section class="grid">
+
+    <!-- ABOUT ME -->
+    <article class="section" id="about">
+
+      <h2 class="section-title">ABOUT ME</h2>
+
+      <div class="about">
+
+        <div class="about-photo-wrap">
+
+          <div class="profile-card">
+            <img id="aboutPhoto" alt="소개 사진">
+            <span class="profile-placeholder" id="aboutPhotoFallback">🙂</span>
+          </div>
+
+          <button type="button" class="about-photo-edit" id="editAboutPhoto">
+            ☻ ABOUT 사진 수정
+          </button>
+
+          <div class="pdf-card">
+
+            <div class="pdf-card-title" id="pdfDisplayName">
+              진로 포트폴리오 자료
+            </div>
+
+            <div class="pdf-actions">
+              <button type="button" class="pdf-btn" id="openPdf">
+                📄 PDF 보기
+              </button>
+
+              <button type="button" class="pdf-btn" id="editPdfName">
+                ✎ 이름 수정
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="about-text">
+
+          <h3>WHO AM I?</h3>
+
+          <p id="heroBio">
+            안녕하세요! 새로운 기술을 배우고 문제를 해결하는 것을 좋아하는 학생 개발자입니다.
+          </p>
+
+        </div>
+
+        <div class="strengths">
+
+          <div class="strength">
+            <b>💡</b>
+            문제해결력
+          </div>
+
+          <div class="strength">
+            <b>☆</b>
+            창의성
+          </div>
+
+          <div class="strength">
+            <b>🌱</b>
+            꾸준함
+          </div>
+
+          <div class="strength">
+            <b>♧</b>
+            협업능력
+          </div>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- CAREER -->
+    <article class="section" id="career">
+
+      <h2 class="section-title">
+        MY CAREER JOURNEY
+      </h2>
+
+      <div class="timeline">
+
+        <div>
+          <b>2023</b><br>
+          관심 분야 발견 🔍
+        </div>
+
+        <div>
+          <b>2024</b><br>
+          소프트웨어 관련 활동 참여 💻
+        </div>
+
+        <div>
+          <b>2025</b><br>
+          AI / 프로그래밍 탐구 🎮
+        </div>
+
+        <div>
+          <b>NOW</b><br>
+          AI 분야 진로 구체화 ☆
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- SKILLS -->
+    <article class="section" id="skills">
+
+      <h2 class="section-title">
+        SKILLS &amp; ACTIVITIES
+      </h2>
+
+      <div class="skills">
+
+        <div class="paper-box">
+          <h3>LANGUAGE</h3>
+          <ul>
+            <li>Python</li>
+            <li>HTML/CSS</li>
+            <li>C / C++</li>
+          </ul>
+        </div>
+
+        <div class="paper-box">
+          <h3>TOOLS</h3>
+          <ul>
+            <li>Figma</li>
+            <li>Arduino</li>
+            <li>GitHub</li>
+          </ul>
+        </div>
+
+        <div class="paper-box">
+          <h3>INTEREST</h3>
+          <ul>
+            <li>AI</li>
+            <li>Web</li>
+            <li>Game Dev</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- PROJECTS -->
+    <article class="section projects" id="projects">
+
+      <h2 class="section-title">
+        PROJECTS
+      </h2>
+
+      <div class="project-list">
+
+        <button
+          class="project"
+          data-project="SMART HAMSTER|Arduino 로봇을 활용해 미로를 탈출하는 프로젝트입니다."
+        >
+          <div class="ico">🤖</div>
+          <h3>SMART HAMSTER</h3>
+          <p>
+            Arduino 로봇<br>
+            미로 탈출
+          </p>
+        </button>
+
+
+        <button
+          class="project"
+          data-project="DATA VISUALIZER|Python으로 데이터를 시각화해 인사이트를 찾는 프로젝트입니다."
+        >
+          <div class="ico">📊</div>
+          <h3>DATA VISUALIZER</h3>
+          <p>
+            Python 데이터<br>
+            시각화 프로젝트
+          </p>
+        </button>
+
+
+        <button
+          class="project"
+          data-project="PORTFOLIO WEB|나만의 성장 기록을 담은 웹 포트폴리오입니다."
+        >
+          <div class="ico">🖼️</div>
+          <h3>PORTFOLIO WEB</h3>
+          <p>
+            나만의 포트폴리오<br>
+            웹 사이트
+          </p>
+        </button>
+
+      </div>
+
+    </article>
+
+
+    <!-- GROWTH -->
+    <article class="section growth" id="growth">
+
+      <h2 class="section-title">
+        MY GROWTH
+      </h2>
+
+      <div class="growth-flow">
+
+        <div>
+          <span>🌱</span>
+          BEFORE
+        </div>
+
+        →
+
+        <div>
+          <span>📖</span>
+          EXPERIENCE
+        </div>
+
+        →
+
+        <div>
+          <span>💡</span>
+          SOLUTION
+        </div>
+
+        →
+
+        <div>
+          <span>☆</span>
+          AFTER
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- FUTURE PLAN : 기존 내용 그대로 -->
+    <article class="section future" id="future">
+
+      <h2 class="section-title">
+        FUTURE PLAN
+      </h2>
+
+      <div class="future-path">
+
+        <div>
+          <b>◯</b>
+          NOW<br>
+          <small>관심 분야 탐색</small>
+        </div>
+
+        →
+
+        <div>
+          <b>🏫</b>
+          HIGH SCHOOL<br>
+          <small>코딩·수학 기초</small>
+        </div>
+
+        →
+
+        <div>
+          <b>🎓</b>
+          UNIVERSITY<br>
+          <small>관심 분야 심화</small>
+        </div>
+
+        →
+
+        <div>
+          <b>🚀</b>
+          FUTURE<br>
+          <small>꿈을 향해</small>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- CONTACT : 기존 내용 그대로 -->
+    <article class="section contact" id="contact">
+
+      <h2 class="section-title">
+        LET'S CONNECT!
+      </h2>
+
+      <div class="contact-links" id="contactLinks"></div>
+
+      <p class="thanks">
+        THANK YOU<br>
+        FOR VISITING MY PORTFOLIO ♡
+      </p>
+
+    </article>
+
+  </section>
+
+</main>
+
+
+<!-- 프로필 수정 -->
+<div class="modal" id="profileModal">
+
+  <form class="modal-box" id="profileForm">
+
+    <h2>프로필 수정</h2>
+
+    <label>
+      프로필 사진
+      <input id="photoInput" type="file" accept="image/*">
+    </label>
+
+    <label>
+      이름
+      <input id="nameInput" maxlength="30" placeholder="OOO">
+    </label>
+
+    <label>
+      직무 / 한 줄 소개
+      <input id="roleInput" maxlength="70" placeholder="AI & SOFTWARE DEVELOPER">
+    </label>
+
+    <label>
+      소개
+      <textarea id="bioInput" maxlength="220"></textarea>
+    </label>
+
+    <div class="modal-actions">
+      <button type="button" class="btn" id="cancelEdit">취소</button>
+      <button class="btn" type="submit">저장하기</button>
+    </div>
+
+  </form>
+
+</div>
+
+
+<!-- ABOUT 사진 -->
+<div class="modal" id="aboutPhotoModal">
+
+  <form class="modal-box" id="aboutPhotoForm">
+
+    <h2>ABOUT 사진 수정</h2>
+
+    <p style="font-size:13px">
+      이 사진은 왼쪽 위의 프로필 사진과 별도로 저장됩니다.
+    </p>
+
+    <label>
+      소개 영역 사진
+      <input id="aboutPhotoInput" type="file" accept="image/*" required>
+    </label>
+
+    <div class="modal-actions">
+      <button type="button" class="btn" id="cancelAboutPhoto">취소</button>
+      <button class="btn" type="submit">사진 저장</button>
+    </div>
+
+  </form>
+
+</div>
+
+
+<!-- 링크 관리 -->
+<div class="modal" id="linksModal">
+
+  <form class="modal-box" id="linksForm">
+
+    <h2>내 링크 관리</h2>
+
+    <p style="margin:0 0 8px;font-size:13px">
+      표시할 이름과 주소를 입력하세요.
+      저장 후 카드 클릭 시 새 탭에서 열립니다.
+    </p>
+
+    <div id="linkRows"></div>
+
+    <button class="btn" type="button" id="addLink">
+      + 링크 추가
+    </button>
+
+    <div class="modal-actions">
+      <button type="button" class="btn" id="cancelLinks">취소</button>
+      <button class="btn" type="submit">링크 저장</button>
+    </div>
+
+  </form>
+
+</div>
+
+
+<!-- PDF -->
+<div class="modal" id="pdfModal">
+
+  <div class="pdf-modal-box">
+
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px">
+
+      <h2 id="pdfModalTitle" style="font:30px 'Gaegu';margin:0">
+        진로 포트폴리오 자료
+      </h2>
+
+      <button type="button" class="btn" id="closePdf">
+        닫기
+      </button>
+
+    </div>
+
+    <iframe
+      class="pdf-viewer"
+      id="pdfViewer"
+      title="PDF 문서"
+    ></iframe>
+
+  </div>
+
+</div>
+
+
+<!-- PDF 이름 -->
+<div class="modal" id="pdfNameModal">
+
+  <form class="modal-box" id="pdfNameForm">
+
+    <h2>PDF 이름 설정</h2>
+
+    <label>
+      표시할 이름
+
+      <input
+        id="pdfNameInput"
+        class="pdf-name-input"
+        maxlength="60"
+        placeholder="예: 나의 진로 탐구 보고서"
+      >
+    </label>
+
+    <div class="modal-actions">
+      <button type="button" class="btn" id="cancelPdfName">
+        취소
+      </button>
+
+      <button type="submit" class="btn">
+        저장하기
+      </button>
+    </div>
+
+  </form>
+
+</div>
+
+
+<!-- 프로젝트 -->
+<div class="modal" id="projectModal">
+
+  <div class="modal-box">
+
+    <h2 id="projectTitle">
+      PROJECT
+    </h2>
+
+    <div id="projectDesc"></div>
+
+    <div id="projectImageArea"></div>
+
+    <input
+      id="projectPhotoInput"
+      type="file"
+      accept="image/*"
+      style="display:none"
+    >
+
+    <div class="project-tools">
+
+      <button
+        type="button"
+        class="btn"
+        id="editProjectTitle"
+      >
+        ✎ 프로젝트 이름 수정
+      </button>
+
+      <button
+        type="button"
+        class="btn"
+        id="editProjectDesc"
+      >
+        ✎ 설명 수정
+      </button>
+
+      <button
+        type="button"
+        class="btn"
+        id="addProjectPhoto"
+      >
+        🖼️ 사진 추가
+      </button>
+
+      <button
+        type="button"
+        class="btn"
+        id="closeProject"
+      >
+        닫기
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<div class="toast" id="toast"></div>
+
+
+<script>
+
+const $ = s => document.querySelector(s);
+const $$ = s => document.querySelectorAll(s);
+
+
+/* =========================
+   기본 저장 / 불러오기
+========================= */
+
+const readStore = (key, fallback) => {
+  try{
+    return JSON.parse(
+      localStorage.getItem(key) ||
+      JSON.stringify(fallback)
+    );
+  }catch{
+    return fallback;
+  }
+};
+
+
+/* =========================
+   공유 링크 데이터
+========================= */
+
+const readShare = () => {
+
+  try{
+
+    const v = new URL(location.href).hash;
+
+    if(!v.startsWith('#share=')){
+      return null;
+    }
+
+    return JSON.parse(
+      decodeURIComponent(
+        escape(
+          atob(v.slice(7))
+        )
+      )
+    );
+
+  }catch{
+    return null;
+  }
+
+};
+
+
+const shareData = readShare();
+
+
+/* =========================
+   프로필
+========================= */
+
+const localProfile = readStore(
+  'portfolioProfile',
+  {
+    name:'OOO',
+    role:'AI & SOFTWARE\nDEVELOPER',
+    bio:'안녕하세요! 새로운 기술을 배우고 문제를 해결하는 것을 좋아하는 학생 개발자입니다.',
+    photo:'',
+    aboutPhoto:''
+  }
+);
+
+
+let data = {
+  ...localProfile,
+  ...(shareData?.profile || {}),
+  photo:localProfile.photo || shareData?.profile?.photo || '',
+  aboutPhoto:localProfile.aboutPhoto || shareData?.profile?.aboutPhoto || ''
+};
+
+
+if(
+  !data ||
+  typeof data !== 'object' ||
+  Array.isArray(data)
+){
+  data = {
+    name:'OOO',
+    role:'AI & SOFTWARE\nDEVELOPER',
+    bio:'안녕하세요!',
+    photo:'',
+    aboutPhoto:''
+  };
+}
+
+
+if(!('aboutPhoto' in data)){
+  data.aboutPhoto='';
+}
+
+
+let editing=false;
+
+
+/* =========================
+   링크
+========================= */
+
+let links =
+  readStore('portfolioLinks',[]);
+
+if(shareData?.links){
+  links = shareData.links;
+}
+
+if(!Array.isArray(links)){
+  links=[];
+}
+
+links = links.filter(
+  l =>
+    l &&
+    typeof l === 'object' &&
+    typeof l.label === 'string' &&
+    typeof l.url === 'string'
+);
+
+
+/* =========================
+   프로젝트 데이터
+========================= */
+
+/*
+  중요:
+  기존 코드처럼 shareData가 있으면
+  공유 데이터만 사용하는 게 아니라
+
+  "공유 데이터 + 현재 브라우저의 수정 내용"
+
+  을 합칩니다.
+
+  그래서 프로젝트를 수정하고 다시 열어도
+  원래 설명으로 돌아가지 않습니다.
+*/
+
+const sharedProjects =
+  shareData?.projects &&
+  typeof shareData.projects === 'object'
+    ? shareData.projects
+    : {};
+
+const localProjects =
+  readStore('projectDetails',{});
+
+const projectDetails = {
+  ...sharedProjects,
+  ...localProjects
+};
+
+
+const sharedProjectTitles =
+  shareData?.projectTitles &&
+  typeof shareData.projectTitles === 'object'
+    ? shareData.projectTitles
+    : {};
+
+const localProjectTitles =
+  readStore('projectTitles',{});
+
+const projectTitles = {
+  ...sharedProjectTitles,
+  ...localProjectTitles
+};
+
+
+const sharedProjectImages =
+  shareData?.projectImages &&
+  typeof shareData.projectImages === 'object'
+    ? shareData.projectImages
+    : {};
+
+const localProjectImages =
+  readStore('projectImages',{});
+
+const projectImages = {
+  ...sharedProjectImages,
+  ...localProjectImages
+};
+
+
+/* =========================
+   PDF
+========================= */
+
+const PDF_FILE='about-document.pdf';
+
+let pdfName =
+  shareData?.pdfName ||
+  readStore(
+    'portfolioPdfName',
+    '진로 포트폴리오 자료'
+  );
+
+
+/* =========================
+   화면 렌더링
+========================= */
+
+function render(){
+
+  $('#heroName').textContent =
+    data.name || 'OOO';
+
+
+  $('#heroRole').innerHTML =
+    (data.role || 'AI & SOFTWARE\nDEVELOPER')
+      .replace(/\n/g,'<br>');
+
+
+  $('#heroBio').textContent =
+    data.bio || '';
+
+
+  const sidePhoto=$('#sidePhoto');
+
+  sidePhoto.src=data.photo || '';
+
+  sidePhoto.style.display =
+    data.photo ? 'block' : 'none';
+
+
+  $('#sideFallback').style.display =
+    data.photo ? 'none' : 'block';
+
+
+  const aboutPhoto=$('#aboutPhoto');
+
+  aboutPhoto.src=data.aboutPhoto || '';
+
+  aboutPhoto.style.display =
+    data.aboutPhoto ? 'block' : 'none';
+
+
+  $('#aboutPhotoFallback').style.display =
+    data.aboutPhoto ? 'none' : 'block';
+
+
+  renderProjectCards();
+
+}
+
+
+render();
+
+
+/* =========================
+   프로젝트 카드 이름 표시
+========================= */
+
+function renderProjectCards(){
+
+  $$('.project').forEach(project=>{
+
+    const raw =
+      project.dataset.project || '';
+
+    const parts =
+      raw.split('|');
+
+    const originalKey =
+      parts[0];
+
+    const title =
+      projectTitles[originalKey] ||
+      originalKey;
+
+    const titleEl =
+      project.querySelector('h3');
+
+    if(titleEl){
+      titleEl.textContent=title;
+    }
+
+  });
+
+}
+
+
+/* =========================
+   토스트
+========================= */
+
+function toast(t){
+
+  const x=$('#toast');
+
+  x.textContent=t;
+
+  x.classList.add('show');
+
+  setTimeout(
+    ()=>x.classList.remove('show'),
+    2500
+  );
+
+}
+
+
+/* =========================
+   이미지 압축
+========================= */
+
+function compactImage(src){
+
+  return new Promise(resolve=>{
+
+    if(
+      !src ||
+      !src.startsWith('data:image')
+    ){
+      resolve(src || '');
+      return;
+    }
+
+    const img=new Image();
+
+    img.onload=()=>{
+
+      const max=700;
+
+      const ratio =
+        Math.min(
+          1,
+          max /
+          Math.max(
+            img.width,
+            img.height
+          )
+        );
+
+      const c=document.createElement('canvas');
+
+      c.width=
+        Math.max(
+          1,
+          Math.round(img.width*ratio)
+        );
+
+      c.height=
+        Math.max(
+          1,
+          Math.round(img.height*ratio)
+        );
+
+      const ctx=c.getContext('2d');
+
+      ctx.drawImage(
+        img,
+        0,
+        0,
+        c.width,
+        c.height
+      );
+
+      resolve(
+        c.toDataURL(
+          'image/jpeg',
+          .72
+        )
+      );
+
+    };
+
+    img.onerror=()=>{
+      resolve(src);
+    };
+
+    img.src=src;
+
+  });
+
+}
+
+
+/* =========================
+   공유 링크
+========================= */
+
+async function makeShareUrl(){
+
+  const profile={
+    ...data,
+    photo:await compactImage(data.photo),
+    aboutPhoto:await compactImage(data.aboutPhoto)
+  };
+
+
+  const images={};
+
+  for(
+    const key of Object.keys(projectImages)
+  ){
+
+    images[key] =
+      await compactImage(
+        projectImages[key]
+      );
+
+  }
+
+
+  const payload={
+
+    profile,
+
+    links,
+
+    text:readStore(
+      'portfolioText',
+      {}
+    ),
+
+    projects:readStore(
+      'projectDetails',
+      {}
+    ),
+
+    projectTitles:readStore(
+      'projectTitles',
+      {}
+    ),
+
+    projectImages:images,
+
+    icons:readStore(
+      'projectIcons',
+      []
+    ),
+
+    pdfName
+
+  };
+
+
+  return (
+    location.href.split('#')[0] +
+    '#share=' +
+    btoa(
+      unescape(
+        encodeURIComponent(
+          JSON.stringify(payload)
+        )
+      )
+    )
+  );
+
+}
+
+
+/* =========================
+   링크 렌더링
+========================= */
+
+function renderLinks(){
+
+  const box=$('#contactLinks');
+
+  box.innerHTML='';
+
+
+  if(!links.length){
+
+    box.innerHTML=
+      '<span style="font:18px Gaegu">‘링크 관리’에서 나만의 링크를 추가해 보세요.</span>';
+
+    return;
+  }
+
+
+  links.forEach(l=>{
+
+    const a=document.createElement('a');
+
+    a.className='contact-link';
+
+    a.href=l.url;
+
+    a.target='_blank';
+
+    a.rel='noopener';
+
+    a.textContent='↗ '+l.label;
+
+    box.append(a);
+
+  });
+
+}
+
+
+renderLinks();
+
+
+/* =========================
+   글 편집
+========================= */
+
+const editableSelectors=[
+  '.brand',
+  '.eyebrow',
+  '.name',
+  '.role',
+  '.section-title',
+  '.about-text h3',
+  '.about-text p',
+  '.strength',
+  '.timeline div',
+  '.paper-box h3',
+  '.paper-box li',
+  '.project h3',
+  '.project p',
+  '.growth-flow div',
+  '.future-path div',
+  '.thanks'
+];
+
+
+const editableNodes=[];
+
+
+editableSelectors.forEach(sel=>{
+
+  $$(sel).forEach(el=>{
+
+    if(!editableNodes.includes(el)){
+
+      el.dataset.editId =
+        'edit-' +
+        editableNodes.length;
+
+      editableNodes.push(el);
+
+    }
+
+  });
+
+});
+
+
+const savedText =
+  shareData?.text ||
+  readStore(
+    'portfolioText',
+    {}
+  );
+
+
+editableNodes.forEach(el=>{
+
+  if(
+    savedText &&
+    savedText[el.dataset.editId]
+  ){
+
+    el.innerHTML =
+      savedText[el.dataset.editId];
+
+  }
+
+});
+
+
+/* =========================
+   아이콘
+========================= */
+
+const projectIcons =
+  $$('.project .ico');
+
+const savedIcons =
+  shareData?.icons ||
+  readStore(
+    'projectIcons',
+    []
+  );
+
+
+if(Array.isArray(savedIcons)){
+
+  projectIcons.forEach(
+    (icon,i)=>{
+
+      if(savedIcons[i]){
+        icon.innerHTML=
+          savedIcons[i];
+      }
+
+    }
+  );
+
+}
+
+
+/* =========================
+   글 편집 모드
+========================= */
+
+function setEditMode(on){
+
+  editing=on;
+
+
+  editableNodes.forEach(
+    el=>{
+      el.contentEditable =
+        on ? 'true' : 'false';
+    }
+  );
+
+
+  projectIcons.forEach(
+    icon=>{
+      icon.contentEditable =
+        on ? 'true' : 'false';
+    }
+  );
+
+
+  document.body.classList.toggle(
+    'editing',
+    on
+  );
+
+
+  $('#toggleEdit').textContent =
+    on
+      ? '✓ 글 저장'
+      : '✎ 글 편집';
+
+
+  if(!on){
+
+    const text={};
+
+    editableNodes.forEach(
+      el=>{
+        text[el.dataset.editId]=
+          el.innerHTML;
+      }
+    );
+
+
+    localStorage.setItem(
+      'portfolioText',
+      JSON.stringify(text)
+    );
+
+
+    localStorage.setItem(
+      'projectIcons',
+      JSON.stringify(
+        [...projectIcons]
+          .map(
+            icon=>icon.innerHTML
+          )
+      )
+    );
+
+
+    toast(
+      '수정한 글이 저장되었습니다!'
+    );
+
+  }
+
+}
+
+
+$('#toggleEdit').onclick=()=>{
+  setEditMode(!editing);
+};
+
+
+/* =========================
+   이동
+========================= */
+
+$$('[data-go]').forEach(b=>{
+
+  b.onclick=()=>{
+
+    document
+      .getElementById(
+        b.dataset.go
+      )
+      .scrollIntoView({
+        behavior:'smooth',
+        block:'start'
+      });
+
+
+    $$('.navlink').forEach(
+      x =>
+        x.classList.toggle(
+          'active',
+          x===b
+        )
+    );
+
+  };
+
+});
+
+
+/* =========================
+   링크 복사
+========================= */
+
+async function copy(t){
+
+  try{
+
+    await navigator.clipboard.writeText(t);
+
+    toast(
+      '사진과 수정 내용이 포함된 링크가 복사되었습니다!'
+    );
+
+  }catch{
+
+    const a=
+      document.createElement('textarea');
+
+    a.value=t;
+
+    document.body.append(a);
+
+    a.select();
+
+    document.execCommand('copy');
+
+    a.remove();
+
+    toast(
+      '사진과 수정 내용이 포함된 링크가 복사되었습니다!'
+    );
+
+  }
+
+}
+
+
+$('#copyPage').onclick=
+  async()=>{
+    await copy(
+      await makeShareUrl()
+    );
+  };
+
+
+/* =========================
+   프로필 수정
+========================= */
+
+$('#editProfile').onclick=()=>{
+
+  $('#nameInput').value=
+    data.name;
+
+  $('#roleInput').value=
+    data.role;
+
+  $('#bioInput').value=
+    data.bio;
+
+  $('#profileModal')
+    .classList.add('show');
+
+};
+
+
+$('#cancelEdit').onclick=()=>
+  $('#profileModal')
+    .classList.remove('show');
+
+
+$('#profileModal').onclick=e=>{
+
+  if(
+    e.target===
+    e.currentTarget
+  ){
+
+    e.currentTarget
+      .classList.remove('show');
+
+  }
+
+};
+
+
+$('#profileForm').onsubmit=e=>{
+
+  e.preventDefault();
+
+
+  data.name=
+    $('#nameInput')
+      .value
+      .trim() ||
+    'OOO';
+
+
+  data.role=
+    $('#roleInput')
+      .value
+      .trim() ||
+    'AI & SOFTWARE DEVELOPER';
+
+
+  data.bio=
+    $('#bioInput')
+      .value
+      .trim() ||
+    '소개를 입력해 주세요.';
+
+
+  const f=
+    $('#photoInput')
+      .files[0];
+
+
+  if(f){
+
+    const r=
+      new FileReader();
+
+
+    r.onload=()=>{
+
+      data.photo=
+        r.result;
+
+
+      localStorage.setItem(
+        'portfolioProfile',
+        JSON.stringify(data)
+      );
+
+
+      render();
+
+      toast(
+        '프로필이 저장되었습니다!'
+      );
+
+    };
+
+
+    r.readAsDataURL(f);
+
+  }else{
+
+    localStorage.setItem(
+      'portfolioProfile',
+      JSON.stringify(data)
+    );
+
+    render();
+
+    toast(
+      '프로필이 저장되었습니다!'
+    );
+
+  }
+
+
+  $('#profileModal')
+    .classList.remove('show');
+
+};
+
+
+/* =========================
+   링크 관리
+========================= */
+
+function row(link={label:'',url:''}){
+
+  link=
+    link &&
+    typeof link==='object'
+      ? link
+      : {};
+
+
+  const label=
+    typeof link.label==='string'
+      ? link.label
+      : '';
+
+
+  const url=
+    typeof link.url==='string'
+      ? link.url
+      : '';
+
+
+  const d=
+    document.createElement('div');
+
+  d.className='link-row';
+
+
+  const nameInput=
+    document.createElement('input');
+
+  nameInput.required=true;
+
+  nameInput.maxLength=35;
+
+  nameInput.placeholder=
+    '표시 이름 (예: GitHub)';
+
+  nameInput.value=label;
+
+
+  const urlInput=
+    document.createElement('input');
+
+  urlInput.required=true;
+
+  urlInput.type='url';
+
+  urlInput.placeholder=
+    'https://example.com';
+
+  urlInput.value=url;
+
+
+  const removeBtn=
+    document.createElement('button');
+
+  removeBtn.type='button';
+
+  removeBtn.className=
+    'remove-link';
+
+  removeBtn.textContent='삭제';
+
+
+  removeBtn.onclick=()=>{
+    d.remove();
+  };
+
+
+  d.append(
+    nameInput,
+    urlInput,
+    removeBtn
+  );
+
+
+  $('#linkRows').append(d);
+
+}
+
+
+function openLinks(){
+
+  const rows=
+    $('#linkRows');
+
+  if(!rows)return;
+
+
+  rows.innerHTML='';
+
+
+  if(links.length){
+
+    links.forEach(
+      link=>row(link)
+    );
+
+  }
+
+
+  $('#linksModal')
+    .classList.add('show');
+
+}
+
+
+$('#addLink').onclick=
+  ()=>row();
+
+
+$('#cancelLinks').onclick=()=>
+  $('#linksModal')
+    .classList.remove('show');
+
+
+$('#linksModal').onclick=e=>{
+
+  if(
+    e.target===
+    e.currentTarget
+  ){
+
+    e.currentTarget
+      .classList.remove('show');
+
+  }
+
+};
+
+
+$('#linksForm').onsubmit=e=>{
+
+  e.preventDefault();
+
+
+  const newLinks=
+    [
+      ...document.querySelectorAll(
+        '#linkRows .link-row'
+      )
+    ]
+    .map(r=>({
+
+      label:
+        r.children[0]
+          .value
+          .trim(),
+
+      url:
+        r.children[1]
+          .value
+          .trim()
+
+    }))
+    .filter(
+      x=>x.label && x.url
+    );
+
+
+  links=newLinks;
+
+
+  localStorage.setItem(
+    'portfolioLinks',
+    JSON.stringify(links)
+  );
+
+
+  renderLinks();
+
+
+  $('#linksModal')
+    .classList.remove('show');
+
+
+  toast(
+    '링크가 저장되었습니다!'
+  );
+
+};
+
+
+/* =========================
+   ABOUT 사진
+========================= */
+
+$('#editAboutPhoto').onclick=()=>
+  $('#aboutPhotoModal')
+    .classList.add('show');
+
+
+$('#cancelAboutPhoto').onclick=()=>
+  $('#aboutPhotoModal')
+    .classList.remove('show');
+
+
+$('#aboutPhotoModal').onclick=e=>{
+
+  if(
+    e.target===
+    e.currentTarget
+  ){
+
+    e.currentTarget
+      .classList.remove('show');
+
+  }
+
+};
+
+
+$('#aboutPhotoForm').onsubmit=e=>{
+
+  e.preventDefault();
+
+
+  const f=
+    $('#aboutPhotoInput')
+      .files[0];
+
+
+  if(!f)return;
+
+
+  const r=
+    new FileReader();
+
+
+  r.onload=()=>{
+
+    data.aboutPhoto=
+      r.result;
+
+
+    localStorage.setItem(
+      'portfolioProfile',
+      JSON.stringify(data)
+    );
+
+
+    render();
+
+
+    toast(
+      'ABOUT 사진이 저장되었습니다!'
+    );
+
+  };
+
+
+  r.readAsDataURL(f);
+
+
+  $('#aboutPhotoModal')
+    .classList.remove('show');
+
+};
+
+
+/* =========================
+   PDF
+========================= */
+
+function renderPdf(){
+
+  $('#pdfDisplayName').textContent =
+    pdfName ||
+    '진로 포트폴리오 자료';
+
+
+  $('#pdfModalTitle').textContent =
+    pdfName ||
+    '진로 포트폴리오 자료';
+
+}
+
+
+renderPdf();
+
+
+$('#openPdf').onclick=()=>{
+
+  $('#pdfViewer').src=
+    PDF_FILE;
+
+
+  $('#pdfModal')
+    .classList.add('show');
+
+};
+
+
+$('#closePdf').onclick=()=>{
+
+  $('#pdfModal')
+    .classList.remove('show');
+
+
+  $('#pdfViewer').src='';
+
+};
+
+
+$('#pdfModal').onclick=e=>{
+
+  if(
+    e.target===
+    e.currentTarget
+  ){
+
+    e.currentTarget
+      .classList.remove('show');
+
+    $('#pdfViewer').src='';
+
+  }
+
+};
+
+
+$('#editPdfName').onclick=()=>{
+
+  $('#pdfNameInput').value=
+    pdfName || '';
+
+
+  $('#pdfNameModal')
+    .classList.add('show');
+
+};
+
+
+$('#cancelPdfName').onclick=()=>
+  $('#pdfNameModal')
+    .classList.remove('show');
+
+
+$('#pdfNameModal').onclick=e=>{
+
+  if(
+    e.target===
+    e.currentTarget
+  ){
+
+    e.currentTarget
+      .classList.remove('show');
+
+  }
+
+};
+
+
+$('#pdfNameForm').onsubmit=e=>{
+
+  e.preventDefault();
+
+
+  pdfName=
+    $('#pdfNameInput')
+      .value
+      .trim() ||
+    '진로 포트폴리오 자료';
+
+
+  localStorage.setItem(
+    'portfolioPdfName',
+    pdfName
+  );
+
+
+  renderPdf();
+
+
+  $('#pdfNameModal')
+    .classList.remove('show');
+
+
+  toast(
+    'PDF 이름이 저장되었습니다!'
+  );
+
+};
+
+
+/* =========================================================
+   PROJECTS
+========================================================= */
+
+let openProjectKey='';
+
+let projectEditMode=false;
+
+
+/* =========================
+   프로젝트 설명 기본 내용
+========================= */
+
+function getDefaultProject(key){
+
+  const project =
+    [...$$('.project')]
+      .find(
+        p =>
+          (p.dataset.project || '')
+            .split('|')[0] === key
+      );
+
+
+  if(!project){
+    return '';
+  }
+
+
+  const parts=
+    project.dataset.project
+      .split('|');
+
+
+  return parts.slice(1).join('|');
+
+}
+
+
+/* =========================
+   프로젝트 제목
+========================= */
+
+function getProjectTitle(key){
+
+  return (
+    projectTitles[key] ||
+    key
+  );
+
+}
+
+
+function saveProjectTitles(){
+
+  localStorage.setItem(
+    'projectTitles',
+    JSON.stringify(projectTitles)
+  );
+
+}
+
+
+/* =========================
+   프로젝트 사진
+========================= */
+
+function renderProjectImage(key){
+
+  const area=
+    $('#projectImageArea');
+
+  area.innerHTML='';
+
+
+  const savedImage=
+    projectImages[key];
+
+
+  /*
+    PORTFOLIO WEB은 기존에 넣어둔
+    강아지 건강 분석 화면을 기본 사진으로 사용.
+    사용자가 직접 사진을 추가하면
+    그 사진이 우선 표시됨.
+  */
+
+  let imageSrc=
+    savedImage || '';
+
+
+  if(
+    !imageSrc &&
+    key==='PORTFOLIO WEB'
+  ){
+
+    imageSrc=
+      'dog-health-web-screens.png?v=2';
+
+  }
+
+
+  const wrap=
+    document.createElement('div');
+
+  wrap.className=
+    'project-photo-wrap';
+
+
+  if(imageSrc){
+
+    const img=
+      document.createElement('img');
+
+    img.className=
+      'project-photo';
+
+    img.src=imageSrc;
+
+    img.alt=
+      '프로젝트 사진';
+
+
+    wrap.append(img);
+
+  }else{
+
+    const empty=
+      document.createElement('div');
+
+    empty.className=
+      'project-photo-empty';
+
+    empty.textContent=
+      '🖼️ 아직 추가된 사진이 없습니다.';
+
+
+    wrap.append(empty);
+
+  }
+
+
+  area.append(wrap);
+
+}
+
+
+/* =========================
+   프로젝트 열기
+========================= */
+
+$$('.project').forEach(p=>{
+
+  p.onclick=()=>{
+
+    /*
+      글 편집 모드에서는 프로젝트를 열지 않음
+    */
+
+    if(editing)return;
+
+
+    const parts=
+      p.dataset.project
+        .split('|');
+
+
+    const key=
+      parts[0];
+
+
+    const defaultDescription=
+      parts.slice(1).join('|');
+
+
+    openProjectKey=key;
+
+    projectEditMode=false;
+
+
+    /* 제목 */
+
+    $('#projectTitle').textContent=
+      getProjectTitle(key);
+
+
+    $('#editProjectDesc').textContent=
+      '✎ 설명 수정';
+
+
+    /* 설명 영역 */
+
+    const desc=
+      $('#projectDesc');
+
+
+    /*
+      먼저 항상 기본 프로젝트 내용부터
+      새로 생성한다.
+
+      이전 프로젝트의 DOM이 남아있지 않게
+      하는 것이 중요함.
+    */
+
+    if(key==='PORTFOLIO WEB'){
+
+      desc.innerHTML=`
+
+        <div class="project-text">
+
+          <p style="line-height:1.75">
+            <b>강아지 건강 분석 일기 웹사이트</b>를 개발했습니다.
+            반려견의 일상과 건강 상태를 일기로 기록하면
+            AI가 내용을 분석하여 건강 이상 여부를 알려주는 서비스입니다.
+          </p>
+
+          <p style="line-height:1.75">
+            반려인이 쉽게 일기를 작성할 수 있도록 직관적인 UI를 설계하고,
+            AI 분석 결과를 명확하고 이해하기 쉬운 형태로 제공하는 데 중점을 두었습니다.
+          </p>
+
+        </div>
+
+        <div class="project-text">
+
+          <p style="line-height:1.75">
+            일기의 제목, 내용, 작성 날짜와 GPT API 분석 결과
+            (<b>mood</b>)를 함께 저장하도록 구현했습니다.
+          </p>
+
+          <div
+            style="
+              border:1.5px solid #39352f;
+              background:#f5ecd8;
+              padding:12px;
+              font:16px/1.7 monospace;
+              white-space:pre-wrap
+            "
+          >2025-10-19
+title: 강아지랑 산책한 날
+content: 우리 강아지 코코 저녁 먹고 나랑 산책했다.
+mood: green  ✓ 건강 상태 양호</div>
+
+        </div>
+
+      `;
+
+    }else{
+
+      desc.innerHTML=`
+
+        <div class="project-text">
+
+          <p style="line-height:1.75">
+            ${defaultDescription}
+          </p>
+
+        </div>
+
+      `;
+
+    }
+
+
+    /*
+      저장된 설명이 있다면 현재 프로젝트에만 적용.
+      다른 프로젝트 내용과 섞이지 않음.
+    */
+
+    const saved=
+      projectDetails[key];
+
+
+    if(Array.isArray(saved)){
+
+      const areas=
+        desc.querySelectorAll(
+          '.project-text'
+        );
+
+
+      saved.forEach(
+        (html,i)=>{
+
+          if(areas[i]){
+
+            areas[i].innerHTML=
+              html;
+
+          }
+
+        }
+      );
+
+    }
+
+
+    /*
+      프로젝트 사진
+    */
+
+    renderProjectImage(key);
+
+
+    $('#projectModal')
+      .classList.add('show');
+
+  };
+
+});
+
+
+/* =========================
+   프로젝트 이름 수정
+========================= */
+
+$('#editProjectTitle').onclick=()=>{
+
+  if(!openProjectKey)return;
+
+
+  const currentTitle=
+    getProjectTitle(
+      openProjectKey
+    );
+
+
+  const newTitle=
+    prompt(
+      '프로젝트 이름을 입력하세요.',
+      currentTitle
+    );
+
+
+  if(
+    newTitle===null
+  ){
+    return;
+  }
+
+
+  const clean=
+    newTitle.trim();
+
+
+  if(!clean){
+
+    toast(
+      '프로젝트 이름을 입력해주세요.'
+    );
+
+    return;
+
+  }
+
+
+  projectTitles[openProjectKey]=
+    clean;
+
+
+  saveProjectTitles();
+
+
+  $('#projectTitle').textContent=
+    clean;
+
+
+  renderProjectCards();
+
+
+  toast(
+    '프로젝트 이름이 저장되었습니다!'
+  );
+
+};
+
+
+/* =========================
+   프로젝트 설명 수정
+========================= */
+
+$('#editProjectDesc').onclick=()=>{
+
+  const areas=
+    $$('#projectDesc .project-text');
+
+
+  if(!areas.length)return;
+
+
+  if(!projectEditMode){
+
+    projectEditMode=true;
+
+
+    areas.forEach(a=>{
+
+      a.contentEditable='true';
+
+      a.style.outline=
+        '2px dashed #d77b63';
+
+      a.style.outlineOffset='4px';
+
+      a.style.background=
+        '#fff4cb';
+
+    });
+
+
+    areas[0].focus();
+
+
+    $('#editProjectDesc').textContent=
+      '✓ 설명 저장';
+
+
+  }else{
+
+    projectEditMode=false;
+
+
+    areas.forEach(a=>{
+
+      a.contentEditable='false';
+
+      a.style.outline='';
+
+      a.style.outlineOffset='';
+
+      a.style.background='';
+
+    });
+
+
+    /*
+      현재 프로젝트의 기존 데이터만 가져옴.
+      다른 프로젝트를 건드리지 않음.
+    */
+
+    const saved =
+      readStore(
+        'projectDetails',
+        {}
+      );
+
+
+    saved[openProjectKey]=
+      [...areas].map(
+        a=>a.innerHTML
+      );
+
+
+    localStorage.setItem(
+      'projectDetails',
+      JSON.stringify(saved)
+    );
+
+
+    /*
+      메모리에서도 즉시 업데이트.
+      그래서 닫았다가 바로 다시 열어도
+      수정한 내용이 유지됨.
+    */
+
+    projectDetails[openProjectKey]=
+      saved[openProjectKey];
+
+
+    $('#editProjectDesc').textContent=
+      '✎ 설명 수정';
+
+
+    toast(
+      '프로젝트 설명이 저장되었습니다!'
+    );
+
+  }
+
+};
+
+
+/* =========================
+   프로젝트 사진 추가
+========================= */
+
+$('#addProjectPhoto').onclick=()=>{
+
+  if(!openProjectKey){
+    return;
+  }
+
+
+  $('#projectPhotoInput').value='';
+
+  $('#projectPhotoInput').click();
+
+};
+
+
+$('#projectPhotoInput').onchange=e=>{
+
+  const file=
+    e.target.files[0];
+
+
+  if(!file){
+    return;
+  }
+
+
+  if(
+    !file.type.startsWith('image/')
+  ){
+
+    toast(
+      '이미지 파일만 추가할 수 있습니다.'
+    );
+
+    return;
+
+  }
+
+
+  const reader=
+    new FileReader();
+
+
+  reader.onload=()=>{
+
+    /*
+      화면에 바로 표시
+    */
+
+    projectImages[openProjectKey]=
+      reader.result;
+
+
+    /*
+      브라우저에 저장
+    */
+
+    localStorage.setItem(
+      'projectImages',
+      JSON.stringify(projectImages)
+    );
+
+
+    renderProjectImage(
+      openProjectKey
+    );
+
+
+    toast(
+      '프로젝트 사진이 저장되었습니다!'
+    );
+
+  };
+
+
+  reader.readAsDataURL(file);
+
+};
+
+
+/* =========================
+   프로젝트 닫기
+========================= */
+
+function closeProjectModal(){
+
+  projectEditMode=false;
+
+
+  /*
+    혹시 설명 편집 중이었다면
+    편집 상태 초기화
+  */
+
+  $$('#projectDesc .project-text')
+    .forEach(a=>{
+
+      a.contentEditable='false';
+
+      a.style.outline='';
+
+      a.style.outlineOffset='';
+
+      a.style.background='';
+
+    });
+
+
+  $('#projectModal')
+    .classList.remove('show');
+
+}
+
+
+$('#closeProject').onclick=
+  closeProjectModal;
+
+
+$('#projectModal').onclick=e=>{
+
+  if(
+    e.target===
+    e.currentTarget
+  ){
+
+    closeProjectModal();
+
+  }
+
+};
+
+</script>
 
 </body>
 </html>
-```
