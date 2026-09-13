@@ -17,16 +17,12 @@
       --yellow:#f8d982;
       --blue:#c9e4e1;
       --pink:#f5c9c0;
-      --line:2px solid #4f4a42;
+      --line:2px solid #4f4a42
     }
 
-    *{
-      box-sizing:border-box;
-    }
+    *{box-sizing:border-box}
 
-    html{
-      scroll-behavior:smooth;
-    }
+    html{scroll-behavior:smooth}
 
     body{
       margin:0;
@@ -35,31 +31,30 @@
       background:
         radial-gradient(#d7cfbf 1px,transparent 1px),
         var(--cream);
-      background-size:11px 11px;
+      background-size:11px 11px
     }
 
     .wrap{
       max-width:1250px;
       margin:auto;
-      padding:22px;
+      padding:22px
     }
 
     .top{
       display:flex;
       justify-content:space-between;
       align-items:center;
-      margin-bottom:22px;
+      margin-bottom:22px
     }
 
     .brand{
       font:42px 'Nanum Pen Script',cursive;
-      letter-spacing:1px;
+      letter-spacing:1px
     }
 
     .top-actions{
       display:flex;
-      gap:10px;
-      flex-wrap:wrap;
+      gap:10px
     }
 
     .btn{
@@ -72,16 +67,12 @@
       font:600 15px 'Gaegu',sans-serif;
       letter-spacing:.6px;
       box-shadow:3px 3px 0 #d8cfbd;
-      transition:.18s;
+      transition:.18s
     }
 
     .btn:hover{
       transform:translate(-2px,-2px);
-      box-shadow:5px 5px 0 var(--yellow);
-    }
-
-    .btn{
-      text-decoration:none;
+      box-shadow:5px 5px 0 var(--yellow)
     }
 
     .hero{
@@ -90,7 +81,7 @@
       min-height:440px;
       display:grid;
       grid-template-columns:190px 1fr;
-      box-shadow:7px 7px 0 #d8cfbd;
+      box-shadow:7px 7px 0 #d8cfbd
     }
 
     .side{
@@ -99,7 +90,7 @@
       display:flex;
       flex-direction:column;
       gap:12px;
-      background:rgba(250,247,237,.8);
+      background:rgba(250,247,237,.8)
     }
 
     .avatar{
@@ -111,13 +102,13 @@
       place-items:center;
       overflow:hidden;
       background:#fff;
-      margin-bottom:10px;
+      margin-bottom:10px
     }
 
     .avatar img{
       width:100%;
       height:100%;
-      object-fit:cover;
+      object-fit:cover
     }
 
     .navlink{
@@ -127,52 +118,45 @@
       cursor:pointer;
       font:700 17px 'Gaegu';
       color:var(--ink);
-      padding:2px;
+      padding:2px
     }
 
     .navlink:hover,
     .navlink.active{
       background:var(--yellow);
-      transform:rotate(-1deg);
+      transform:rotate(-1deg)
     }
 
     .hero-main{
       position:relative;
       padding:55px 7%;
-      overflow:hidden;
+      overflow:hidden
     }
 
     .spark{
       position:absolute;
       font:29px 'Gaegu';
-      color:#c49762;
+      color:#c49762
     }
 
-    .s1{
-      right:12%;
-      top:70px;
-    }
-
-    .s2{
-      right:25%;
-      top:140px;
-    }
+    .s1{right:12%;top:70px}
+    .s2{right:25%;top:140px}
 
     .eyebrow,
     .section-title{
       font:25px 'Gaegu';
-      letter-spacing:1px;
+      letter-spacing:1px
     }
 
     .name{
       font:72px 'Nanum Pen Script';
-      margin:5px 0 0;
+      margin:5px 0 0
     }
 
     .role{
       font:28px 'Gaegu';
       line-height:1.1;
-      margin:10px 0 28px;
+      margin:10px 0 28px
     }
 
     .doodle{
@@ -181,14 +165,14 @@
       bottom:34px;
       font-size:105px;
       transform:rotate(-8deg);
-      opacity:.82;
+      opacity:.82
     }
 
     .grid{
       display:grid;
       grid-template-columns:repeat(3,1fr);
       gap:18px;
-      margin-top:20px;
+      margin-top:20px
     }
 
     .section{
@@ -196,18 +180,18 @@
       background:var(--paper);
       padding:25px;
       box-shadow:5px 5px 0 #d8cfbd;
-      min-height:285px;
+      min-height:285px
     }
 
     .section-title{
       margin:0 0 16px;
-      font-size:29px;
+      font-size:29px
     }
 
     .about{
       display:grid;
       grid-template-columns:150px 1fr;
-      gap:22px;
+      gap:22px
     }
 
     .profile-card{
@@ -216,57 +200,57 @@
       background:var(--pink);
       display:grid;
       place-items:center;
-      overflow:hidden;
+      overflow:hidden
     }
 
     .profile-card img{
       height:100%;
       width:100%;
-      object-fit:cover;
+      object-fit:cover
     }
 
     .profile-placeholder{
-      font-size:76px;
+      font-size:76px
     }
 
     .about-text h3{
       font:25px 'Gaegu';
-      margin:0 0 7px;
+      margin:0 0 7px
     }
 
     .about-text p{
       line-height:1.75;
-      margin:0;
+      margin:0
     }
 
     .strengths{
       grid-column:1/-1;
       display:grid;
       grid-template-columns:repeat(4,1fr);
-      gap:9px;
+      gap:9px
     }
 
     .strength{
       border:1.5px solid var(--ink);
       padding:10px;
       text-align:center;
-      font:17px 'Gaegu';
+      font:17px 'Gaegu'
     }
 
     .strength b{
       font-size:25px;
-      display:block;
+      display:block
     }
 
     .timeline{
       border-left:2px solid var(--ink);
       padding-left:22px;
-      margin:8px;
+      margin:8px
     }
 
     .timeline div{
       position:relative;
-      margin:0 0 19px;
+      margin:0 0 19px
     }
 
     .timeline div:before{
@@ -278,45 +262,45 @@
       background:var(--paper);
       border-radius:50%;
       left:-29px;
-      top:4px;
+      top:4px
     }
 
     .timeline b{
-      font:18px 'Gaegu';
+      font:18px 'Gaegu'
     }
 
     .skills{
       display:grid;
       grid-template-columns:repeat(3,1fr);
-      gap:10px;
+      gap:10px
     }
 
     .paper-box{
       border:1.5px solid var(--ink);
       padding:11px;
-      min-height:130px;
+      min-height:130px
     }
 
     .paper-box h3{
       font:18px 'Gaegu';
-      margin:0 0 8px;
+      margin:0 0 8px
     }
 
     .paper-box ul{
       padding-left:17px;
       line-height:1.8;
       margin:0;
-      font-size:13px;
+      font-size:13px
     }
 
     .projects{
-      grid-column:span 2;
+      grid-column:span 2
     }
 
     .project-list{
       display:grid;
       grid-template-columns:repeat(3,1fr);
-      gap:11px;
+      gap:11px
     }
 
     .project{
@@ -325,33 +309,31 @@
       min-height:175px;
       background:#fffcf3;
       cursor:pointer;
-      transition:.2s;
-      color:var(--ink);
-      text-align:left;
+      transition:.2s
     }
 
     .project:hover{
       background:var(--yellow);
-      transform:translateY(-4px);
+      transform:translateY(-4px)
     }
 
     .project .ico{
-      font-size:40px;
+      font-size:40px
     }
 
     .project h3{
       font:19px 'Gaegu';
-      margin:7px 0 4px;
+      margin:7px 0 4px
     }
 
     .project p{
       font-size:12px;
       margin:0;
-      line-height:1.5;
+      line-height:1.5
     }
 
     .growth{
-      position:relative;
+      position:relative
     }
 
     .growth-flow{
@@ -360,16 +342,16 @@
       justify-content:space-around;
       text-align:center;
       font:18px 'Gaegu';
-      margin-top:35px;
+      margin-top:35px
     }
 
     .growth-flow span{
       font-size:38px;
-      display:block;
+      display:block
     }
 
     .future{
-      grid-column:span 2;
+      grid-column:span 2
     }
 
     .future-path{
@@ -378,26 +360,26 @@
       justify-content:space-between;
       text-align:center;
       font:18px 'Gaegu';
-      margin:37px 0;
+      margin:37px 0
     }
 
     .future-path b{
       font-size:36px;
-      display:block;
+      display:block
     }
 
     .contact{
       text-align:center;
       display:flex;
       flex-direction:column;
-      justify-content:center;
+      justify-content:center
     }
 
     .contact-links{
       display:flex;
       justify-content:center;
       gap:13px;
-      flex-wrap:wrap;
+      flex-wrap:wrap
     }
 
     .contact-link{
@@ -405,21 +387,17 @@
       padding:10px;
       background:white;
       cursor:pointer;
-      font:17px 'Gaegu';
+      font:17px 'Gaegu'
     }
 
     .contact-link:hover{
-      background:var(--blue);
+      background:var(--blue)
     }
 
     .thanks{
       font:37px 'Nanum Pen Script';
-      margin:23px 0 0;
+      margin:23px 0 0
     }
-
-    /* =========================
-       MODAL
-    ========================= */
 
     .modal{
       position:fixed;
@@ -429,33 +407,30 @@
       align-items:center;
       justify-content:center;
       padding:20px;
-      z-index:10;
-      overflow-y:auto;
+      z-index:3
     }
 
     .modal.show{
-      display:flex;
+      display:flex
     }
 
     .modal-box{
-      width:min(600px,100%);
-      max-height:92vh;
-      overflow-y:auto;
+      width:min(500px,100%);
       background:var(--paper);
       border:var(--line);
       padding:25px;
-      box-shadow:8px 8px 0 #3d3932;
+      box-shadow:8px 8px 0 #3d3932
     }
 
     .modal-box h2{
       font:32px 'Gaegu';
-      margin:0 0 15px;
+      margin:0 0 15px
     }
 
     .modal-box label{
       display:block;
       font:18px 'Gaegu';
-      margin-top:10px;
+      margin-top:10px
     }
 
     .modal-box input,
@@ -464,12 +439,12 @@
       padding:9px;
       border:1.5px solid var(--ink);
       background:#fffef9;
-      font:15px Pretendard;
+      font:15px Pretendard
     }
 
     .modal-box textarea{
       height:80px;
-      resize:vertical;
+      resize:vertical
     }
 
     .modal-actions{
@@ -477,269 +452,8 @@
       justify-content:flex-end;
       gap:9px;
       margin-top:17px;
-      flex-wrap:wrap;
+      flex-wrap:wrap
     }
-
-    /* =========================
-       EDIT MODE
-    ========================= */
-
-    .editing [contenteditable="true"]{
-      outline:2px dashed #d77b63;
-      outline-offset:4px;
-      background:#fff4cb;
-      cursor:text;
-    }
-
-    .editing [contenteditable="true"]:focus{
-      outline-color:#4c9e9a;
-      background:#fff;
-    }
-
-    /* =========================
-       ABOUT PHOTO
-    ========================= */
-
-    .about-photo-wrap{
-      position:relative;
-    }
-
-    .about-photo-edit{
-      width:100%;
-      border:1.5px solid var(--ink);
-      border-top:0;
-      padding:6px;
-      background:var(--blue);
-      cursor:pointer;
-      font:17px Gaegu;
-    }
-
-    /* =========================
-       LINKS
-    ========================= */
-
-    .link-row{
-      display:grid;
-      grid-template-columns:1fr 1.4fr auto;
-      gap:7px;
-      margin:8px 0;
-    }
-
-    .link-row input{
-      min-width:0;
-    }
-
-    .remove-link{
-      border:1.5px solid var(--ink);
-      background:#f5c9c0;
-      cursor:pointer;
-      padding:0 9px;
-      font-family:Gaegu;
-      font-size:16px;
-    }
-
-    /* =========================
-       PDF
-    ========================= */
-
-    .pdf-card{
-      margin-top:10px;
-      border:1.5px solid var(--ink);
-      background:#fffdf6;
-      padding:10px;
-      text-align:center;
-    }
-
-    .pdf-card-title{
-      font:19px 'Gaegu';
-      margin:0 0 7px;
-      word-break:break-word;
-    }
-
-    .pdf-actions{
-      display:flex;
-      gap:6px;
-      justify-content:center;
-      flex-wrap:wrap;
-    }
-
-    .pdf-btn{
-      border:1.5px solid var(--ink);
-      background:var(--blue);
-      padding:6px 9px;
-      cursor:pointer;
-      font:16px 'Gaegu';
-      color:var(--ink);
-    }
-
-    .pdf-btn:hover{
-      background:var(--yellow);
-    }
-
-    .pdf-modal-box{
-      width:min(1000px,100%);
-      height:min(88vh,900px);
-      padding:14px;
-      background:var(--paper);
-      border:var(--line);
-      box-shadow:8px 8px 0 #3d3932;
-      display:flex;
-      flex-direction:column;
-    }
-
-    .pdf-viewer{
-      width:100%;
-      height:100%;
-      border:1.5px solid var(--ink);
-      background:white;
-    }
-
-    .pdf-name-input{
-      width:100%;
-      padding:9px;
-      border:1.5px solid var(--ink);
-      background:#fffef9;
-      font:15px Pretendard;
-      margin-top:8px;
-    }
-
-    /* =========================
-       PROJECT EDIT
-    ========================= */
-
-    .project-title-row{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:10px;
-      margin-bottom:12px;
-    }
-
-    .project-title-row h2{
-      margin:0;
-      word-break:break-word;
-    }
-
-    .project-edit-name{
-      border:1.5px solid var(--ink);
-      background:var(--blue);
-      padding:7px 10px;
-      cursor:pointer;
-      font:16px Gaegu;
-      white-space:nowrap;
-      color:var(--ink);
-    }
-
-    .project-edit-name:hover{
-      background:var(--yellow);
-    }
-
-    .project-image-area{
-      margin-top:16px;
-      border-top:1.5px dashed #999;
-      padding-top:14px;
-    }
-
-    .project-image-area-title{
-      font:21px Gaegu;
-      margin-bottom:8px;
-    }
-
-    .project-image-list{
-      display:grid;
-      grid-template-columns:repeat(2,1fr);
-      gap:10px;
-    }
-
-    .project-image-item{
-      position:relative;
-      border:1.5px solid var(--ink);
-      background:#4b4b4b;
-      min-height:130px;
-      overflow:hidden;
-    }
-
-    .project-image-item img{
-      display:block;
-      width:100%;
-      height:180px;
-      object-fit:contain;
-      background:#4b4b4b;
-    }
-
-    .delete-project-image{
-      position:absolute;
-      top:6px;
-      right:6px;
-      border:1.5px solid var(--ink);
-      background:#f5c9c0;
-      color:var(--ink);
-      padding:4px 8px;
-      cursor:pointer;
-      font:15px Gaegu;
-    }
-
-    .project-image-upload{
-      margin-top:10px;
-      width:100%;
-      border:1.5px dashed var(--ink);
-      background:#fffef9;
-      padding:14px;
-      cursor:pointer;
-      text-align:center;
-      font:18px Gaegu;
-    }
-
-    .project-image-upload:hover{
-      background:var(--blue);
-    }
-
-    .project-text{
-      line-height:1.75;
-    }
-
-    .project-data-box{
-      border:1.5px solid var(--ink);
-      background:#f5ecd8;
-      padding:12px;
-      font:16px/1.7 monospace;
-      white-space:pre-wrap;
-      margin-top:10px;
-    }
-
-    .empty-images{
-      border:1.5px dashed #999;
-      padding:18px;
-      text-align:center;
-      font:17px Gaegu;
-      background:#fffef9;
-    }
-
-    .project-name-edit-box{
-      display:none;
-      margin-bottom:12px;
-      gap:7px;
-    }
-
-    .project-name-edit-box.show{
-      display:flex;
-    }
-
-    .project-name-edit-box input{
-      flex:1;
-    }
-
-    .project-name-save{
-      border:1.5px solid var(--ink);
-      background:var(--yellow);
-      padding:7px 12px;
-      cursor:pointer;
-      font:16px Gaegu;
-    }
-
-    /* =========================
-       TOAST
-    ========================= */
 
     .toast{
       position:fixed;
@@ -751,135 +465,259 @@
       padding:12px 18px;
       border-radius:4px;
       transition:.25s;
-      z-index:20;
-      font-size:14px;
-      max-width:90%;
-      text-align:center;
+      z-index:5;
+      font-size:14px
     }
 
     .toast.show{
-      transform:translateX(-50%) translateY(0);
+      transform:translateX(-50%) translateY(0)
+    }
+
+    .btn{
+      text-decoration:none
+    }
+
+    .about-photo-wrap{
+      position:relative
+    }
+
+    .about-photo-edit{
+      width:100%;
+      border:1.5px solid var(--ink);
+      border-top:0;
+      padding:6px;
+      background:var(--blue);
+      cursor:pointer;
+      font:17px Gaegu
+    }
+
+    .editing [contenteditable="true"]{
+      outline:2px dashed #d77b63;
+      outline-offset:4px;
+      background:#fff4cb;
+      cursor:text
+    }
+
+    .editing [contenteditable="true"]:focus{
+      outline-color:#4c9e9a;
+      background:#fff
+    }
+
+    .link-row{
+      display:grid;
+      grid-template-columns:1fr 1.4fr auto;
+      gap:7px;
+      margin:8px 0
+    }
+
+    .link-row input{
+      min-width:0
+    }
+
+    .remove-link{
+      border:1.5px solid var(--ink);
+      background:#f5c9c0;
+      cursor:pointer;
+      padding:0 9px;
+      font-family:Gaegu;
+      font-size:16px
+    }
+
+    .pdf-card{
+      margin-top:10px;
+      border:1.5px solid var(--ink);
+      background:#fffdf6;
+      padding:10px;
+      text-align:center
+    }
+
+    .pdf-card-title{
+      font:19px 'Gaegu';
+      margin:0 0 7px;
+      word-break:break-word
+    }
+
+    .pdf-actions{
+      display:flex;
+      gap:6px;
+      justify-content:center;
+      flex-wrap:wrap
+    }
+
+    .pdf-btn{
+      border:1.5px solid var(--ink);
+      background:var(--blue);
+      padding:6px 9px;
+      cursor:pointer;
+      font:16px 'Gaegu';
+      color:var(--ink)
+    }
+
+    .pdf-btn:hover{
+      background:var(--yellow)
+    }
+
+    .pdf-modal-box{
+      width:min(1000px,100%);
+      height:min(88vh,900px);
+      padding:14px;
+      background:var(--paper);
+      border:var(--line);
+      box-shadow:8px 8px 0 #3d3932;
+      display:flex;
+      flex-direction:column
+    }
+
+    .pdf-viewer{
+      width:100%;
+      height:100%;
+      border:1.5px solid var(--ink);
+      background:white
+    }
+
+    .pdf-name-input{
+      width:100%;
+      padding:9px;
+      border:1.5px solid var(--ink);
+      background:#fffef9;
+      font:15px Pretendard;
+      margin-top:8px
+    }
+
+    /* 프로젝트 사진 */
+    .project-photo-wrap{
+      margin:14px 0;
+      border:1.5px solid var(--ink);
+      background:#fff;
+      padding:8px;
+      text-align:center
+    }
+
+    .project-photo{
+      display:block;
+      width:100%;
+      max-height:360px;
+      object-fit:contain;
+      margin:auto
+    }
+
+    .project-photo-empty{
+      padding:20px;
+      font:17px Gaegu;
+      color:#777
+    }
+
+    .project-tools{
+      display:flex;
+      gap:7px;
+      flex-wrap:wrap;
+      margin-top:10px
     }
 
     @media(max-width:850px){
-
       .hero{
-        grid-template-columns:1fr;
+        grid-template-columns:1fr
       }
 
       .side{
         border-right:0;
         border-bottom:var(--line);
         flex-direction:row;
-        flex-wrap:wrap;
+        flex-wrap:wrap
       }
 
       .avatar{
-        margin:0 12px 0 0;
+        margin:0 12px 0 0
       }
 
       .navlink{
-        font-size:16px;
+        font-size:16px
       }
 
       .grid{
-        grid-template-columns:1fr;
+        grid-template-columns:1fr
       }
 
       .projects,
       .future{
-        grid-column:auto;
+        grid-column:auto
       }
 
       .about{
-        grid-template-columns:1fr;
+        grid-template-columns:1fr
       }
 
       .profile-card{
-        height:145px;
+        height:145px
       }
 
       .doodle{
-        font-size:70px;
+        font-size:70px
       }
 
       .name{
-        font-size:58px;
+        font-size:58px
       }
     }
 
     @media(max-width:520px){
-
       .wrap{
-        padding:12px;
+        padding:12px
       }
 
       .brand{
-        font-size:33px;
+        font-size:33px
       }
 
       .top{
-        align-items:flex-start;
+        align-items:flex-start
       }
 
       .top-actions{
-        flex-direction:column;
+        flex-direction:column
       }
 
       .hero-main{
-        padding:38px 8%;
+        padding:38px 8%
       }
 
       .grid{
-        gap:13px;
+        gap:13px
       }
 
       .section{
-        padding:18px;
+        padding:18px
       }
 
       .skills,
       .project-list{
-        grid-template-columns:1fr;
+        grid-template-columns:1fr
       }
 
       .strengths{
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns:repeat(2,1fr)
       }
 
       .future-path{
         gap:8px;
-        font-size:13px;
+        font-size:13px
       }
 
       .future-path b{
-        font-size:27px;
+        font-size:27px
       }
 
       .link-row{
-        grid-template-columns:1fr auto;
+        grid-template-columns:1fr auto
       }
 
       .link-row input:nth-child(2){
-        grid-column:1/2;
+        grid-column:1/2
       }
 
       .remove-link{
         grid-column:2;
-        grid-row:1/3;
-      }
-
-      .project-image-list{
-        grid-template-columns:1fr;
-      }
-
-      .project-title-row{
-        align-items:flex-start;
-        flex-direction:column;
-      }
-
-      .project-edit-name{
-        width:100%;
+        grid-row:1/3
       }
     }
   </style>
@@ -894,16 +732,11 @@
 
     <div class="top-actions">
       <button class="btn" id="toggleEdit">✎ 글 편집</button>
-      <button type="button" class="btn" id="manageLinks">🔗 링크 관리</button>
+      <button type="button" class="btn" id="manageLinks" onclick="openLinks()">🔗 링크 관리</button>
       <button class="btn" id="copyPage">🔗 포트폴리오 링크 복사</button>
       <button class="btn" id="editProfile">☻ 프로필 수정</button>
     </div>
   </header>
-
-
-  <!-- =========================
-       HOME
-  ========================= -->
 
   <section class="hero" id="home">
 
@@ -924,7 +757,6 @@
       <button class="navlink" data-go="contact">CONTACT</button>
 
     </aside>
-
 
     <div class="hero-main">
 
@@ -947,16 +779,12 @@
       <div class="doodle">💻</div>
 
     </div>
-
   </section>
 
 
   <section class="grid">
 
-    <!-- =========================
-         ABOUT
-    ========================= -->
-
+    <!-- ABOUT ME -->
     <article class="section" id="about">
 
       <h2 class="section-title">ABOUT ME</h2>
@@ -970,14 +798,9 @@
             <span class="profile-placeholder" id="aboutPhotoFallback">🙂</span>
           </div>
 
-          <button type="button"
-                  class="about-photo-edit"
-                  id="editAboutPhoto">
+          <button type="button" class="about-photo-edit" id="editAboutPhoto">
             ☻ ABOUT 사진 수정
           </button>
-
-
-          <!-- PDF -->
 
           <div class="pdf-card">
 
@@ -986,25 +809,18 @@
             </div>
 
             <div class="pdf-actions">
-
-              <button type="button"
-                      class="pdf-btn"
-                      id="openPdf">
+              <button type="button" class="pdf-btn" id="openPdf">
                 📄 PDF 보기
               </button>
 
-              <button type="button"
-                      class="pdf-btn"
-                      id="editPdfName">
+              <button type="button" class="pdf-btn" id="editPdfName">
                 ✎ 이름 수정
               </button>
-
             </div>
 
           </div>
 
         </div>
-
 
         <div class="about-text">
 
@@ -1015,7 +831,6 @@
           </p>
 
         </div>
-
 
         <div class="strengths">
 
@@ -1046,10 +861,7 @@
     </article>
 
 
-    <!-- =========================
-         CAREER
-    ========================= -->
-
+    <!-- CAREER -->
     <article class="section" id="career">
 
       <h2 class="section-title">
@@ -1083,10 +895,7 @@
     </article>
 
 
-    <!-- =========================
-         SKILLS
-    ========================= -->
-
+    <!-- SKILLS -->
     <article class="section" id="skills">
 
       <h2 class="section-title">
@@ -1127,10 +936,7 @@
     </article>
 
 
-    <!-- =========================
-         PROJECTS
-    ========================= -->
-
+    <!-- PROJECTS -->
     <article class="section projects" id="projects">
 
       <h2 class="section-title">
@@ -1139,54 +945,42 @@
 
       <div class="project-list">
 
-        <button class="project"
-                data-project-key="smart-hamster">
-
+        <button
+          class="project"
+          data-project="SMART HAMSTER|Arduino 로봇을 활용해 미로를 탈출하는 프로젝트입니다."
+        >
           <div class="ico">🤖</div>
-
-          <h3 class="project-card-title">
-            SMART HAMSTER
-          </h3>
-
+          <h3>SMART HAMSTER</h3>
           <p>
             Arduino 로봇<br>
             미로 탈출
           </p>
-
         </button>
 
 
-        <button class="project"
-                data-project-key="data-visualizer">
-
+        <button
+          class="project"
+          data-project="DATA VISUALIZER|Python으로 데이터를 시각화해 인사이트를 찾는 프로젝트입니다."
+        >
           <div class="ico">📊</div>
-
-          <h3 class="project-card-title">
-            DATA VISUALIZER
-          </h3>
-
+          <h3>DATA VISUALIZER</h3>
           <p>
             Python 데이터<br>
             시각화 프로젝트
           </p>
-
         </button>
 
 
-        <button class="project"
-                data-project-key="portfolio-web">
-
+        <button
+          class="project"
+          data-project="PORTFOLIO WEB|나만의 성장 기록을 담은 웹 포트폴리오입니다."
+        >
           <div class="ico">🖼️</div>
-
-          <h3 class="project-card-title">
-            PORTFOLIO WEB
-          </h3>
-
+          <h3>PORTFOLIO WEB</h3>
           <p>
             나만의 포트폴리오<br>
             웹 사이트
           </p>
-
         </button>
 
       </div>
@@ -1194,10 +988,7 @@
     </article>
 
 
-    <!-- =========================
-         GROWTH
-    ========================= -->
-
+    <!-- GROWTH -->
     <article class="section growth" id="growth">
 
       <h2 class="section-title">
@@ -1237,10 +1028,7 @@
     </article>
 
 
-    <!-- =========================
-         FUTURE
-    ========================= -->
-
+    <!-- FUTURE PLAN : 기존 내용 그대로 -->
     <article class="section future" id="future">
 
       <h2 class="section-title">
@@ -1284,10 +1072,7 @@
     </article>
 
 
-    <!-- =========================
-         CONTACT
-    ========================= -->
-
+    <!-- CONTACT : 기존 내용 그대로 -->
     <article class="section contact" id="contact">
 
       <h2 class="section-title">
@@ -1308,10 +1093,7 @@
 </main>
 
 
-<!-- =========================
-     PROFILE MODAL
-========================= -->
-
+<!-- 프로필 수정 -->
 <div class="modal" id="profileModal">
 
   <form class="modal-box" id="profileForm">
@@ -1320,44 +1102,27 @@
 
     <label>
       프로필 사진
-      <input id="photoInput"
-             type="file"
-             accept="image/*">
+      <input id="photoInput" type="file" accept="image/*">
     </label>
 
     <label>
       이름
-      <input id="nameInput"
-             maxlength="30"
-             placeholder="OOO">
+      <input id="nameInput" maxlength="30" placeholder="OOO">
     </label>
 
     <label>
       직무 / 한 줄 소개
-      <input id="roleInput"
-             maxlength="70"
-             placeholder="AI & SOFTWARE DEVELOPER">
+      <input id="roleInput" maxlength="70" placeholder="AI & SOFTWARE DEVELOPER">
     </label>
 
     <label>
       소개
-      <textarea id="bioInput"
-                maxlength="220"></textarea>
+      <textarea id="bioInput" maxlength="220"></textarea>
     </label>
 
     <div class="modal-actions">
-
-      <button type="button"
-              class="btn"
-              id="cancelEdit">
-        취소
-      </button>
-
-      <button class="btn"
-              type="submit">
-        저장하기
-      </button>
-
+      <button type="button" class="btn" id="cancelEdit">취소</button>
+      <button class="btn" type="submit">저장하기</button>
     </div>
 
   </form>
@@ -1365,10 +1130,7 @@
 </div>
 
 
-<!-- =========================
-     ABOUT PHOTO MODAL
-========================= -->
-
+<!-- ABOUT 사진 -->
 <div class="modal" id="aboutPhotoModal">
 
   <form class="modal-box" id="aboutPhotoForm">
@@ -1381,25 +1143,12 @@
 
     <label>
       소개 영역 사진
-      <input id="aboutPhotoInput"
-             type="file"
-             accept="image/*"
-             required>
+      <input id="aboutPhotoInput" type="file" accept="image/*" required>
     </label>
 
     <div class="modal-actions">
-
-      <button type="button"
-              class="btn"
-              id="cancelAboutPhoto">
-        취소
-      </button>
-
-      <button class="btn"
-              type="submit">
-        사진 저장
-      </button>
-
+      <button type="button" class="btn" id="cancelAboutPhoto">취소</button>
+      <button class="btn" type="submit">사진 저장</button>
     </div>
 
   </form>
@@ -1407,10 +1156,7 @@
 </div>
 
 
-<!-- =========================
-     LINKS MODAL
-========================= -->
-
+<!-- 링크 관리 -->
 <div class="modal" id="linksModal">
 
   <form class="modal-box" id="linksForm">
@@ -1424,25 +1170,13 @@
 
     <div id="linkRows"></div>
 
-    <button class="btn"
-            type="button"
-            id="addLink">
+    <button class="btn" type="button" id="addLink">
       + 링크 추가
     </button>
 
     <div class="modal-actions">
-
-      <button type="button"
-              class="btn"
-              id="cancelLinks">
-        취소
-      </button>
-
-      <button class="btn"
-              type="submit">
-        링크 저장
-      </button>
-
+      <button type="button" class="btn" id="cancelLinks">취소</button>
+      <button class="btn" type="submit">링크 저장</button>
     </div>
 
   </form>
@@ -1450,43 +1184,35 @@
 </div>
 
 
-<!-- =========================
-     PDF MODAL
-========================= -->
-
+<!-- PDF -->
 <div class="modal" id="pdfModal">
 
   <div class="pdf-modal-box">
 
     <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px">
 
-      <h2 id="pdfModalTitle"
-          style="font:30px 'Gaegu';margin:0">
+      <h2 id="pdfModalTitle" style="font:30px 'Gaegu';margin:0">
         진로 포트폴리오 자료
       </h2>
 
-      <button type="button"
-              class="btn"
-              id="closePdf">
+      <button type="button" class="btn" id="closePdf">
         닫기
       </button>
 
     </div>
 
-    <iframe class="pdf-viewer"
-            id="pdfViewer"
-            title="PDF 문서">
-    </iframe>
+    <iframe
+      class="pdf-viewer"
+      id="pdfViewer"
+      title="PDF 문서"
+    ></iframe>
 
   </div>
 
 </div>
 
 
-<!-- =========================
-     PDF NAME MODAL
-========================= -->
-
+<!-- PDF 이름 -->
 <div class="modal" id="pdfNameModal">
 
   <form class="modal-box" id="pdfNameForm">
@@ -1496,25 +1222,22 @@
     <label>
       표시할 이름
 
-      <input id="pdfNameInput"
-             class="pdf-name-input"
-             maxlength="60"
-             placeholder="예: 나의 진로 탐구 보고서">
+      <input
+        id="pdfNameInput"
+        class="pdf-name-input"
+        maxlength="60"
+        placeholder="예: 나의 진로 탐구 보고서"
+      >
     </label>
 
     <div class="modal-actions">
-
-      <button type="button"
-              class="btn"
-              id="cancelPdfName">
+      <button type="button" class="btn" id="cancelPdfName">
         취소
       </button>
 
-      <button type="submit"
-              class="btn">
+      <button type="submit" class="btn">
         저장하기
       </button>
-
     </div>
 
   </form>
@@ -1522,94 +1245,57 @@
 </div>
 
 
-<!-- =========================
-     PROJECT MODAL
-========================= -->
-
+<!-- 프로젝트 -->
 <div class="modal" id="projectModal">
 
   <div class="modal-box">
 
-    <div class="project-title-row">
-
-      <h2 id="projectTitle">
-        PROJECT
-      </h2>
-
-      <button type="button"
-              class="project-edit-name"
-              id="editProjectName">
-        ✎ 프로젝트 이름 수정
-      </button>
-
-    </div>
-
-
-    <!-- 프로젝트 이름 수정 입력창 -->
-
-    <div class="project-name-edit-box"
-         id="projectNameEditBox">
-
-      <input id="projectNameInput"
-             maxlength="50"
-             placeholder="프로젝트 이름">
-
-      <button type="button"
-              class="project-name-save"
-              id="saveProjectName">
-        저장
-      </button>
-
-    </div>
-
-
-    <!-- 프로젝트 설명 -->
+    <h2 id="projectTitle">
+      PROJECT
+    </h2>
 
     <div id="projectDesc"></div>
 
+    <div id="projectImageArea"></div>
 
-    <!-- 프로젝트 사진 -->
+    <input
+      id="projectPhotoInput"
+      type="file"
+      accept="image/*"
+      style="display:none"
+    >
 
-    <div class="project-image-area">
+    <div class="project-tools">
 
-      <div class="project-image-area-title">
-        🖼️ 프로젝트 사진
-      </div>
+      <button
+        type="button"
+        class="btn"
+        id="editProjectTitle"
+      >
+        ✎ 프로젝트 이름 수정
+      </button>
 
-      <div class="project-image-list"
-           id="projectImageList">
-      </div>
-
-      <label class="project-image-upload">
-
-        ＋ 사진 추가하기
-
-        <input id="projectImageInput"
-               type="file"
-               accept="image/*"
-               multiple
-               style="display:none">
-
-      </label>
-
-      <p style="font-size:12px;margin:7px 0 0;color:#777">
-        여러 장을 한 번에 추가할 수 있어요.
-      </p>
-
-    </div>
-
-
-    <div class="modal-actions">
-
-      <button type="button"
-              class="btn"
-              id="editProjectDesc">
+      <button
+        type="button"
+        class="btn"
+        id="editProjectDesc"
+      >
         ✎ 설명 수정
       </button>
 
-      <button type="button"
-              class="btn"
-              id="closeProject">
+      <button
+        type="button"
+        class="btn"
+        id="addProjectPhoto"
+      >
+        🖼️ 사진 추가
+      </button>
+
+      <button
+        type="button"
+        class="btn"
+        id="closeProject"
+      >
         닫기
       </button>
 
@@ -1620,71 +1306,55 @@
 </div>
 
 
-<!-- =========================
-     TOAST
-========================= -->
-
 <div class="toast" id="toast"></div>
 
 
 <script>
 
-/* =========================================================
-   기본 도우미
-========================================================= */
-
 const $ = s => document.querySelector(s);
 const $$ = s => document.querySelectorAll(s);
 
 
-/* =========================================================
-   LOCAL STORAGE
-========================================================= */
+/* =========================
+   기본 저장 / 불러오기
+========================= */
 
 const readStore = (key, fallback) => {
-
   try{
-
     return JSON.parse(
       localStorage.getItem(key) ||
       JSON.stringify(fallback)
     );
-
   }catch{
-
     return fallback;
-
   }
-
 };
 
 
-/* =========================================================
-   공유 링크 데이터 읽기
-========================================================= */
+/* =========================
+   공유 링크 데이터
+========================= */
 
 const readShare = () => {
 
   try{
 
-    const hash = new URL(location.href).hash;
+    const v = new URL(location.href).hash;
 
-    if(!hash.startsWith('#share=')){
+    if(!v.startsWith('#share=')){
       return null;
     }
 
     return JSON.parse(
       decodeURIComponent(
         escape(
-          atob(hash.slice(7))
+          atob(v.slice(7))
         )
       )
     );
 
   }catch{
-
     return null;
-
   }
 
 };
@@ -1693,9 +1363,9 @@ const readShare = () => {
 const shareData = readShare();
 
 
-/* =========================================================
+/* =========================
    프로필
-========================================================= */
+========================= */
 
 const localProfile = readStore(
   'portfolioProfile',
@@ -1710,21 +1380,10 @@ const localProfile = readStore(
 
 
 let data = {
-
   ...localProfile,
-
   ...(shareData?.profile || {}),
-
-  photo:
-    localProfile.photo ||
-    shareData?.profile?.photo ||
-    '',
-
-  aboutPhoto:
-    localProfile.aboutPhoto ||
-    shareData?.profile?.aboutPhoto ||
-    ''
-
+  photo:localProfile.photo || shareData?.profile?.photo || '',
+  aboutPhoto:localProfile.aboutPhoto || shareData?.profile?.aboutPhoto || ''
 };
 
 
@@ -1733,17 +1392,13 @@ if(
   typeof data !== 'object' ||
   Array.isArray(data)
 ){
-
   data = {
-
     name:'OOO',
     role:'AI & SOFTWARE\nDEVELOPER',
     bio:'안녕하세요!',
     photo:'',
     aboutPhoto:''
-
   };
-
 }
 
 
@@ -1752,19 +1407,23 @@ if(!('aboutPhoto' in data)){
 }
 
 
-/* =========================================================
+let editing=false;
+
+
+/* =========================
    링크
-========================================================= */
+========================= */
 
 let links =
-  shareData?.links ||
   readStore('portfolioLinks',[]);
 
+if(shareData?.links){
+  links = shareData.links;
+}
 
 if(!Array.isArray(links)){
   links=[];
 }
-
 
 links = links.filter(
   l =>
@@ -1775,154 +1434,85 @@ links = links.filter(
 );
 
 
-/* =========================================================
-   프로젝트 기본 데이터
-========================================================= */
+/* =========================
+   프로젝트 데이터
+========================= */
 
-const defaultProjects = {
+/*
+  중요:
+  기존 코드처럼 shareData가 있으면
+  공유 데이터만 사용하는 게 아니라
 
-  'smart-hamster':{
+  "공유 데이터 + 현재 브라우저의 수정 내용"
 
-    name:'SMART HAMSTER',
+  을 합칩니다.
 
-    icon:'🤖',
+  그래서 프로젝트를 수정하고 다시 열어도
+  원래 설명으로 돌아가지 않습니다.
+*/
 
-    cardText:'Arduino 로봇 미로 탈출',
+const sharedProjects =
+  shareData?.projects &&
+  typeof shareData.projects === 'object'
+    ? shareData.projects
+    : {};
 
-    description:
-      'Arduino 로봇을 활용해 미로를 탈출하는 프로젝트입니다.',
+const localProjects =
+  readStore('projectDetails',{});
 
-    images:[]
-
-  },
-
-
-  'data-visualizer':{
-
-    name:'DATA VISUALIZER',
-
-    icon:'📊',
-
-    cardText:'Python 데이터 시각화 프로젝트',
-
-    description:
-      'Python으로 데이터를 시각화해 인사이트를 찾는 프로젝트입니다.',
-
-    images:[]
-
-  },
-
-
-  'portfolio-web':{
-
-    name:'PORTFOLIO WEB',
-
-    icon:'🖼️',
-
-    cardText:'나만의 포트폴리오 웹 사이트',
-
-    description:
-      '나만의 성장 기록을 담은 웹 포트폴리오입니다.',
-
-    images:[]
-
-  }
-
+const projectDetails = {
+  ...sharedProjects,
+  ...localProjects
 };
 
 
-/* =========================================================
-   프로젝트 데이터 불러오기
-========================================================= */
+const sharedProjectTitles =
+  shareData?.projectTitles &&
+  typeof shareData.projectTitles === 'object'
+    ? shareData.projectTitles
+    : {};
 
-let projectData =
-  readStore('portfolioProjects', {});
+const localProjectTitles =
+  readStore('projectTitles',{});
 
-
-if(
-  !projectData ||
-  typeof projectData !== 'object' ||
-  Array.isArray(projectData)
-){
-
-  projectData={};
-
-}
+const projectTitles = {
+  ...sharedProjectTitles,
+  ...localProjectTitles
+};
 
 
-/* =========================================================
-   기본값과 저장값 합치기
-========================================================= */
+const sharedProjectImages =
+  shareData?.projectImages &&
+  typeof shareData.projectImages === 'object'
+    ? shareData.projectImages
+    : {};
 
-Object.keys(defaultProjects).forEach(key => {
+const localProjectImages =
+  readStore('projectImages',{});
 
-  if(
-    !projectData[key] ||
-    typeof projectData[key] !== 'object'
-  ){
-
-    projectData[key] = {
-      ...defaultProjects[key]
-    };
-
-  }else{
-
-    projectData[key] = {
-
-      ...defaultProjects[key],
-      ...projectData[key]
-
-    };
-
-  }
+const projectImages = {
+  ...sharedProjectImages,
+  ...localProjectImages
+};
 
 
-  if(!Array.isArray(projectData[key].images)){
-    projectData[key].images=[];
-  }
+/* =========================
+   PDF
+========================= */
 
-});
+const PDF_FILE='about-document.pdf';
 
-
-/* =========================================================
-   공유 링크에서 프로젝트 정보 가져오기
-========================================================= */
-
-if(
-  shareData?.projects &&
-  typeof shareData.projects === 'object'
-){
-
-  Object.keys(shareData.projects).forEach(key => {
-
-    if(!projectData[key]){
-      projectData[key]={
-        ...defaultProjects[key],
-        ...shareData.projects[key]
-      };
-    }else{
-
-      projectData[key]={
-
-        ...projectData[key],
-
-        ...shareData.projects[key]
-
-      };
-
-    }
-
-  });
-
-}
+let pdfName =
+  shareData?.pdfName ||
+  readStore(
+    'portfolioPdfName',
+    '진로 포트폴리오 자료'
+  );
 
 
-/* =========================================================
-   텍스트 편집
-========================================================= */
-
-let editing=false;
-
+/* =========================
+   화면 렌더링
+========================= */
 
 function render(){
 
@@ -1962,21 +1552,57 @@ function render(){
   $('#aboutPhotoFallback').style.display =
     data.aboutPhoto ? 'none' : 'block';
 
+
+  renderProjectCards();
+
 }
 
 
 render();
 
 
-/* =========================================================
-   TOAST
-========================================================= */
+/* =========================
+   프로젝트 카드 이름 표시
+========================= */
 
-function toast(message){
+function renderProjectCards(){
+
+  $$('.project').forEach(project=>{
+
+    const raw =
+      project.dataset.project || '';
+
+    const parts =
+      raw.split('|');
+
+    const originalKey =
+      parts[0];
+
+    const title =
+      projectTitles[originalKey] ||
+      originalKey;
+
+    const titleEl =
+      project.querySelector('h3');
+
+    if(titleEl){
+      titleEl.textContent=title;
+    }
+
+  });
+
+}
+
+
+/* =========================
+   토스트
+========================= */
+
+function toast(t){
 
   const x=$('#toast');
 
-  x.textContent=message;
+  x.textContent=t;
 
   x.classList.add('show');
 
@@ -1988,34 +1614,29 @@ function toast(message){
 }
 
 
-/* =========================================================
+/* =========================
    이미지 압축
-========================================================= */
+========================= */
 
 function compactImage(src){
 
-  return new Promise(resolve => {
+  return new Promise(resolve=>{
 
     if(
       !src ||
       !src.startsWith('data:image')
     ){
-
       resolve(src || '');
-
       return;
-
     }
 
-
     const img=new Image();
-
 
     img.onload=()=>{
 
       const max=700;
 
-      const ratio=
+      const ratio =
         Math.min(
           1,
           max /
@@ -2025,49 +1646,42 @@ function compactImage(src){
           )
         );
 
+      const c=document.createElement('canvas');
 
-      const canvas=
-        document.createElement('canvas');
-
-
-      canvas.width=
+      c.width=
         Math.max(
           1,
           Math.round(img.width*ratio)
         );
 
-
-      canvas.height=
+      c.height=
         Math.max(
           1,
           Math.round(img.height*ratio)
         );
 
-
-      const ctx=
-        canvas.getContext('2d');
-
+      const ctx=c.getContext('2d');
 
       ctx.drawImage(
         img,
         0,
         0,
-        canvas.width,
-        canvas.height
+        c.width,
+        c.height
       );
 
-
       resolve(
-        canvas.toDataURL(
+        c.toDataURL(
           'image/jpeg',
-          .68
+          .72
         )
       );
 
     };
 
-
-    img.onerror=()=>resolve(src);
+    img.onerror=()=>{
+      resolve(src);
+    };
 
     img.src=src;
 
@@ -2076,49 +1690,29 @@ function compactImage(src){
 }
 
 
-/* =========================================================
-   공유 링크 생성
-========================================================= */
+/* =========================
+   공유 링크
+========================= */
 
 async function makeShareUrl(){
 
   const profile={
-
     ...data,
-
-    photo:
-      await compactImage(data.photo),
-
-    aboutPhoto:
-      await compactImage(data.aboutPhoto)
-
+    photo:await compactImage(data.photo),
+    aboutPhoto:await compactImage(data.aboutPhoto)
   };
 
 
-  /*
-    프로젝트 사진도 공유 링크 안에 포함
-  */
+  const images={};
 
-  const projects={};
+  for(
+    const key of Object.keys(projectImages)
+  ){
 
-
-  for(const key of Object.keys(projectData)){
-
-    const p=projectData[key];
-
-
-    projects[key]={
-
-      ...p,
-
-      images:
-        Array.isArray(p.images)
-          ? await Promise.all(
-              p.images.map(img=>compactImage(img))
-            )
-          : []
-
-    };
+    images[key] =
+      await compactImage(
+        projectImages[key]
+      );
 
   }
 
@@ -2129,13 +1723,27 @@ async function makeShareUrl(){
 
     links,
 
-    text:
-      readStore('portfolioText',{}),
+    text:readStore(
+      'portfolioText',
+      {}
+    ),
 
-    projects,
+    projects:readStore(
+      'projectDetails',
+      {}
+    ),
 
-    icons:
-      readStore('projectIcons',[]),
+    projectTitles:readStore(
+      'projectTitles',
+      {}
+    ),
+
+    projectImages:images,
+
+    icons:readStore(
+      'projectIcons',
+      []
+    ),
 
     pdfName
 
@@ -2157,9 +1765,9 @@ async function makeShareUrl(){
 }
 
 
-/* =========================================================
-   링크 표시
-========================================================= */
+/* =========================
+   링크 렌더링
+========================= */
 
 function renderLinks(){
 
@@ -2174,14 +1782,12 @@ function renderLinks(){
       '<span style="font:18px Gaegu">‘링크 관리’에서 나만의 링크를 추가해 보세요.</span>';
 
     return;
-
   }
 
 
   links.forEach(l=>{
 
-    const a=
-      document.createElement('a');
+    const a=document.createElement('a');
 
     a.className='contact-link';
 
@@ -2203,12 +1809,11 @@ function renderLinks(){
 renderLinks();
 
 
-/* =========================================================
-   편집 가능한 일반 텍스트
-========================================================= */
+/* =========================
+   글 편집
+========================= */
 
 const editableSelectors=[
-
   '.brand',
   '.eyebrow',
   '.name',
@@ -2220,11 +1825,11 @@ const editableSelectors=[
   '.timeline div',
   '.paper-box h3',
   '.paper-box li',
+  '.project h3',
   '.project p',
   '.growth-flow div',
   '.future-path div',
   '.thanks'
-
 ];
 
 
@@ -2237,8 +1842,9 @@ editableSelectors.forEach(sel=>{
 
     if(!editableNodes.includes(el)){
 
-      el.dataset.editId=
-        'edit-'+editableNodes.length;
+      el.dataset.editId =
+        'edit-' +
+        editableNodes.length;
 
       editableNodes.push(el);
 
@@ -2249,13 +1855,12 @@ editableSelectors.forEach(sel=>{
 });
 
 
-/* =========================================================
-   저장된 텍스트
-========================================================= */
-
 const savedText =
   shareData?.text ||
-  readStore('portfolioText',{});
+  readStore(
+    'portfolioText',
+    {}
+  );
 
 
 editableNodes.forEach(el=>{
@@ -2265,7 +1870,7 @@ editableNodes.forEach(el=>{
     savedText[el.dataset.editId]
   ){
 
-    el.innerHTML=
+    el.innerHTML =
       savedText[el.dataset.editId];
 
   }
@@ -2273,17 +1878,19 @@ editableNodes.forEach(el=>{
 });
 
 
-/* =========================================================
-   프로젝트 카드 아이콘
-========================================================= */
+/* =========================
+   아이콘
+========================= */
 
-const projectIcons=
+const projectIcons =
   $$('.project .ico');
 
-
-const savedIcons=
+const savedIcons =
   shareData?.icons ||
-  readStore('projectIcons',[]);
+  readStore(
+    'projectIcons',
+    []
+  );
 
 
 if(Array.isArray(savedIcons)){
@@ -2292,10 +1899,8 @@ if(Array.isArray(savedIcons)){
     (icon,i)=>{
 
       if(savedIcons[i]){
-
         icon.innerHTML=
           savedIcons[i];
-
       }
 
     }
@@ -2304,76 +1909,29 @@ if(Array.isArray(savedIcons)){
 }
 
 
-/* =========================================================
-   프로젝트 카드 이름 표시
-========================================================= */
-
-function renderProjectCards(){
-
-  $$('.project').forEach(card=>{
-
-    const key=
-      card.dataset.projectKey;
-
-    const project=
-      projectData[key];
-
-    if(!project)return;
-
-
-    const title=
-      card.querySelector('.project-card-title');
-
-    if(title){
-
-      title.textContent=
-        project.name;
-
-    }
-
-
-    const p=
-      card.querySelector('p');
-
-    if(p){
-
-      p.innerHTML=
-        (project.cardText || '')
-          .replace(/\n/g,'<br>');
-
-    }
-
-  });
-
-}
-
-
-renderProjectCards();
-
-
-/* =========================================================
+/* =========================
    글 편집 모드
-========================================================= */
+========================= */
 
 function setEditMode(on){
 
   editing=on;
 
 
-  editableNodes.forEach(el=>{
+  editableNodes.forEach(
+    el=>{
+      el.contentEditable =
+        on ? 'true' : 'false';
+    }
+  );
 
-    el.contentEditable=
-      on ? 'true' : 'false';
 
-  });
-
-
-  projectIcons.forEach(icon=>{
-
-    icon.contentEditable=
-      on ? 'true' : 'false';
-
-  });
+  projectIcons.forEach(
+    icon=>{
+      icon.contentEditable =
+        on ? 'true' : 'false';
+    }
+  );
 
 
   document.body.classList.toggle(
@@ -2382,7 +1940,7 @@ function setEditMode(on){
   );
 
 
-  $('#toggleEdit').textContent=
+  $('#toggleEdit').textContent =
     on
       ? '✓ 글 저장'
       : '✎ 글 편집';
@@ -2392,13 +1950,12 @@ function setEditMode(on){
 
     const text={};
 
-
-    editableNodes.forEach(el=>{
-
-      text[el.dataset.editId]=
-        el.innerHTML;
-
-    });
+    editableNodes.forEach(
+      el=>{
+        text[el.dataset.editId]=
+          el.innerHTML;
+      }
+    );
 
 
     localStorage.setItem(
@@ -2411,7 +1968,9 @@ function setEditMode(on){
       'projectIcons',
       JSON.stringify(
         [...projectIcons]
-          .map(icon=>icon.innerHTML)
+          .map(
+            icon=>icon.innerHTML
+          )
       )
     );
 
@@ -2425,31 +1984,35 @@ function setEditMode(on){
 }
 
 
-$('#toggleEdit').onclick=
-  ()=>setEditMode(!editing);
+$('#toggleEdit').onclick=()=>{
+  setEditMode(!editing);
+};
 
 
-/* =========================================================
-   네비게이션
-========================================================= */
+/* =========================
+   이동
+========================= */
 
 $$('[data-go]').forEach(b=>{
 
   b.onclick=()=>{
 
     document
-      .getElementById(b.dataset.go)
+      .getElementById(
+        b.dataset.go
+      )
       .scrollIntoView({
         behavior:'smooth',
         block:'start'
       });
 
 
-    $$('.navlink').forEach(x=>
-      x.classList.toggle(
-        'active',
-        x===b
-      )
+    $$('.navlink').forEach(
+      x =>
+        x.classList.toggle(
+          'active',
+          x===b
+        )
     );
 
   };
@@ -2457,9 +2020,55 @@ $$('[data-go]').forEach(b=>{
 });
 
 
-/* =========================================================
+/* =========================
+   링크 복사
+========================= */
+
+async function copy(t){
+
+  try{
+
+    await navigator.clipboard.writeText(t);
+
+    toast(
+      '사진과 수정 내용이 포함된 링크가 복사되었습니다!'
+    );
+
+  }catch{
+
+    const a=
+      document.createElement('textarea');
+
+    a.value=t;
+
+    document.body.append(a);
+
+    a.select();
+
+    document.execCommand('copy');
+
+    a.remove();
+
+    toast(
+      '사진과 수정 내용이 포함된 링크가 복사되었습니다!'
+    );
+
+  }
+
+}
+
+
+$('#copyPage').onclick=
+  async()=>{
+    await copy(
+      await makeShareUrl()
+    );
+  };
+
+
+/* =========================
    프로필 수정
-========================================================= */
+========================= */
 
 $('#editProfile').onclick=()=>{
 
@@ -2478,12 +2087,9 @@ $('#editProfile').onclick=()=>{
 };
 
 
-$('#cancelEdit').onclick=()=>{
-
+$('#cancelEdit').onclick=()=>
   $('#profileModal')
     .classList.remove('show');
-
-};
 
 
 $('#profileModal').onclick=e=>{
@@ -2507,22 +2113,29 @@ $('#profileForm').onsubmit=e=>{
 
 
   data.name=
-    $('#nameInput').value.trim() ||
+    $('#nameInput')
+      .value
+      .trim() ||
     'OOO';
 
 
   data.role=
-    $('#roleInput').value.trim() ||
+    $('#roleInput')
+      .value
+      .trim() ||
     'AI & SOFTWARE DEVELOPER';
 
 
   data.bio=
-    $('#bioInput').value.trim() ||
+    $('#bioInput')
+      .value
+      .trim() ||
     '소개를 입력해 주세요.';
 
 
   const f=
-    $('#photoInput').files[0];
+    $('#photoInput')
+      .files[0];
 
 
   if(f){
@@ -2545,7 +2158,6 @@ $('#profileForm').onsubmit=e=>{
 
       render();
 
-
       toast(
         '프로필이 저장되었습니다!'
       );
@@ -2562,9 +2174,7 @@ $('#profileForm').onsubmit=e=>{
       JSON.stringify(data)
     );
 
-
     render();
-
 
     toast(
       '프로필이 저장되었습니다!'
@@ -2579,9 +2189,9 @@ $('#profileForm').onsubmit=e=>{
 };
 
 
-/* =========================================================
+/* =========================
    링크 관리
-========================================================= */
+========================= */
 
 function row(link={label:'',url:''}){
 
@@ -2607,13 +2217,11 @@ function row(link={label:'',url:''}){
   const d=
     document.createElement('div');
 
-
   d.className='link-row';
 
 
   const nameInput=
     document.createElement('input');
-
 
   nameInput.required=true;
 
@@ -2628,7 +2236,6 @@ function row(link={label:'',url:''}){
   const urlInput=
     document.createElement('input');
 
-
   urlInput.required=true;
 
   urlInput.type='url';
@@ -2641,7 +2248,6 @@ function row(link={label:'',url:''}){
 
   const removeBtn=
     document.createElement('button');
-
 
   removeBtn.type='button';
 
@@ -2670,7 +2276,8 @@ function row(link={label:'',url:''}){
 
 function openLinks(){
 
-  const rows=$('#linkRows');
+  const rows=
+    $('#linkRows');
 
   if(!rows)return;
 
@@ -2693,20 +2300,13 @@ function openLinks(){
 }
 
 
-$('#manageLinks').onclick=
-  openLinks;
-
-
 $('#addLink').onclick=
   ()=>row();
 
 
-$('#cancelLinks').onclick=()=>{
-
+$('#cancelLinks').onclick=()=>
   $('#linksModal')
     .classList.remove('show');
-
-};
 
 
 $('#linksModal').onclick=e=>{
@@ -2735,7 +2335,6 @@ $('#linksForm').onsubmit=e=>{
         '#linkRows .link-row'
       )
     ]
-
     .map(r=>({
 
       label:
@@ -2749,9 +2348,8 @@ $('#linksForm').onsubmit=e=>{
           .trim()
 
     }))
-
     .filter(
-      x=>x.label&&x.url
+      x=>x.label && x.url
     );
 
 
@@ -2778,24 +2376,18 @@ $('#linksForm').onsubmit=e=>{
 };
 
 
-/* =========================================================
+/* =========================
    ABOUT 사진
-========================================================= */
+========================= */
 
-$('#editAboutPhoto').onclick=()=>{
-
+$('#editAboutPhoto').onclick=()=>
   $('#aboutPhotoModal')
     .classList.add('show');
 
-};
 
-
-$('#cancelAboutPhoto').onclick=()=>{
-
+$('#cancelAboutPhoto').onclick=()=>
   $('#aboutPhotoModal')
     .classList.remove('show');
-
-};
 
 
 $('#aboutPhotoModal').onclick=e=>{
@@ -2819,7 +2411,8 @@ $('#aboutPhotoForm').onsubmit=e=>{
 
 
   const f=
-    $('#aboutPhotoInput').files[0];
+    $('#aboutPhotoInput')
+      .files[0];
 
 
   if(!f)return;
@@ -2860,34 +2453,20 @@ $('#aboutPhotoForm').onsubmit=e=>{
 };
 
 
-/* =========================================================
+/* =========================
    PDF
-========================================================= */
-
-const PDF_FILE=
-  'about-document.pdf';
-
-
-let pdfName=
-  shareData?.pdfName ||
-  readStore(
-    'portfolioPdfName',
-    '진로 포트폴리오 자료'
-  );
-
+========================= */
 
 function renderPdf(){
 
-  $('#pdfDisplayName')
-    .textContent=
-      pdfName ||
-      '진로 포트폴리오 자료';
+  $('#pdfDisplayName').textContent =
+    pdfName ||
+    '진로 포트폴리오 자료';
 
 
-  $('#pdfModalTitle')
-    .textContent=
-      pdfName ||
-      '진로 포트폴리오 자료';
+  $('#pdfModalTitle').textContent =
+    pdfName ||
+    '진로 포트폴리오 자료';
 
 }
 
@@ -2947,12 +2526,9 @@ $('#editPdfName').onclick=()=>{
 };
 
 
-$('#cancelPdfName').onclick=()=>{
-
+$('#cancelPdfName').onclick=()=>
   $('#pdfNameModal')
     .classList.remove('show');
-
-};
 
 
 $('#pdfNameModal').onclick=e=>{
@@ -3003,7 +2579,7 @@ $('#pdfNameForm').onsubmit=e=>{
 
 
 /* =========================================================
-   프로젝트 관련
+   PROJECTS
 ========================================================= */
 
 let openProjectKey='';
@@ -3011,288 +2587,298 @@ let openProjectKey='';
 let projectEditMode=false;
 
 
-/* =========================================================
+/* =========================
    프로젝트 설명 기본 내용
-========================================================= */
+========================= */
 
-function getDefaultProjectDescription(key){
+function getDefaultProject(key){
 
-  if(key==='portfolio-web'){
-
-    return `
-
-      <div class="project-text">
-
-        <p style="line-height:1.75">
-
-          <b>강아지 건강 분석 일기 웹사이트</b>를 개발했습니다.
-          반려견의 일상과 건강 상태를 일기로 기록하면
-          AI가 내용을 분석하여 건강 이상 여부를 알려주는 서비스입니다.
-
-        </p>
-
-        <p style="line-height:1.75">
-
-          반려인이 쉽게 일기를 작성할 수 있도록
-          직관적인 UI를 설계하고,
-          AI 분석 결과를 명확하고 이해하기 쉬운 형태로
-          제공하는 데 중점을 두었습니다.
-
-        </p>
-
-      </div>
+  const project =
+    [...$$('.project')]
+      .find(
+        p =>
+          (p.dataset.project || '')
+            .split('|')[0] === key
+      );
 
 
-      <div class="project-text">
-
-        <p style="line-height:1.75">
-
-          일기의 제목, 내용, 작성 날짜와
-          GPT API 분석 결과(<b>mood</b>)를 함께 저장하도록 구현했습니다.
-
-        </p>
-
-        <div class="project-data-box">
-
-2025-10-19
-title: 강아지랑 산책한 날
-content: 우리 강아지 코코 저녁 먹고 나랑 산책했다.
-mood: green  ✓ 건강 상태 양호
-
-        </div>
-
-      </div>
-
-    `;
-
+  if(!project){
+    return '';
   }
 
 
-  return `
+  const parts=
+    project.dataset.project
+      .split('|');
 
-    <div class="project-text">
 
-      <p style="line-height:1.75">
-        ${defaultProjects[key]?.description || ''}
-      </p>
-
-    </div>
-
-  `;
+  return parts.slice(1).join('|');
 
 }
 
 
-/* =========================================================
-   프로젝트 이미지 표시
-========================================================= */
+/* =========================
+   프로젝트 제목
+========================= */
 
-function renderProjectImages(){
+function getProjectTitle(key){
 
-  const box=
-    $('#projectImageList');
-
-
-  box.innerHTML='';
-
-
-  const project=
-    projectData[openProjectKey];
-
-
-  const images=
-    Array.isArray(project?.images)
-      ? project.images
-      : [];
-
-
-  if(!images.length){
-
-    box.innerHTML=
-      `<div class="empty-images">
-        아직 추가된 사진이 없어요.<br>
-        아래의 「＋ 사진 추가하기」를 눌러 사진을 추가해 보세요!
-      </div>`;
-
-    return;
-
-  }
-
-
-  images.forEach((src,index)=>{
-
-    const item=
-      document.createElement('div');
-
-
-    item.className=
-      'project-image-item';
-
-
-    const img=
-      document.createElement('img');
-
-
-    img.src=src;
-
-    img.alt=
-      project.name +
-      ' 프로젝트 사진 ' +
-      (index+1);
-
-
-    const deleteBtn=
-      document.createElement('button');
-
-
-    deleteBtn.type='button';
-
-    deleteBtn.className=
-      'delete-project-image';
-
-    deleteBtn.textContent='삭제';
-
-
-    deleteBtn.onclick=e=>{
-
-      e.stopPropagation();
-
-
-      project.images.splice(
-        index,
-        1
-      );
-
-
-      saveProjectData();
-
-
-      renderProjectImages();
-
-
-      toast(
-        '프로젝트 사진이 삭제되었습니다!'
-      );
-
-    };
-
-
-    item.append(
-      img,
-      deleteBtn
-    );
-
-
-    box.append(item);
-
-  });
-
-}
-
-
-/* =========================================================
-   프로젝트 저장
-========================================================= */
-
-function saveProjectData(){
-
-  localStorage.setItem(
-    'portfolioProjects',
-    JSON.stringify(projectData)
+  return (
+    projectTitles[key] ||
+    key
   );
 
 }
 
 
-/* =========================================================
-   프로젝트 이름 표시
-========================================================= */
+function saveProjectTitles(){
 
-function renderProjectTitle(){
-
-  const project=
-    projectData[openProjectKey];
-
-
-  if(!project)return;
-
-
-  $('#projectTitle')
-    .textContent=
-      project.name;
-
-
-  $('#projectNameInput')
-    .value=
-      project.name;
-
-
-  renderProjectCards();
+  localStorage.setItem(
+    'projectTitles',
+    JSON.stringify(projectTitles)
+  );
 
 }
 
 
-/* =========================================================
-   프로젝트 클릭
-========================================================= */
+/* =========================
+   프로젝트 사진
+========================= */
+
+function renderProjectImage(key){
+
+  const area=
+    $('#projectImageArea');
+
+  area.innerHTML='';
+
+
+  const savedImage=
+    projectImages[key];
+
+
+  /*
+    PORTFOLIO WEB은 기존에 넣어둔
+    강아지 건강 분석 화면을 기본 사진으로 사용.
+    사용자가 직접 사진을 추가하면
+    그 사진이 우선 표시됨.
+  */
+
+  let imageSrc=
+    savedImage || '';
+
+
+  if(
+    !imageSrc &&
+    key==='PORTFOLIO WEB'
+  ){
+
+    imageSrc=
+      'dog-health-web-screens.png?v=2';
+
+  }
+
+
+  const wrap=
+    document.createElement('div');
+
+  wrap.className=
+    'project-photo-wrap';
+
+
+  if(imageSrc){
+
+    const img=
+      document.createElement('img');
+
+    img.className=
+      'project-photo';
+
+    img.src=imageSrc;
+
+    img.alt=
+      '프로젝트 사진';
+
+
+    wrap.append(img);
+
+  }else{
+
+    const empty=
+      document.createElement('div');
+
+    empty.className=
+      'project-photo-empty';
+
+    empty.textContent=
+      '🖼️ 아직 추가된 사진이 없습니다.';
+
+
+    wrap.append(empty);
+
+  }
+
+
+  area.append(wrap);
+
+}
+
+
+/* =========================
+   프로젝트 열기
+========================= */
 
 $$('.project').forEach(p=>{
 
   p.onclick=()=>{
 
+    /*
+      글 편집 모드에서는 프로젝트를 열지 않음
+    */
+
     if(editing)return;
 
 
-    openProjectKey=
-      p.dataset.projectKey;
+    const parts=
+      p.dataset.project
+        .split('|');
 
+
+    const key=
+      parts[0];
+
+
+    const defaultDescription=
+      parts.slice(1).join('|');
+
+
+    openProjectKey=key;
 
     projectEditMode=false;
 
 
-    $('#projectNameEditBox')
-      .classList.remove('show');
+    /* 제목 */
+
+    $('#projectTitle').textContent=
+      getProjectTitle(key);
 
 
-    $('#editProjectDesc')
-      .textContent=
-        '✎ 설명 수정';
+    $('#editProjectDesc').textContent=
+      '✎ 설명 수정';
 
 
-    const project=
-      projectData[openProjectKey];
-
-
-    renderProjectTitle();
-
+    /* 설명 영역 */
 
     const desc=
       $('#projectDesc');
 
 
     /*
-      저장된 설명이 있으면 그걸 사용하고,
-      없으면 기본 설명을 사용
+      먼저 항상 기본 프로젝트 내용부터
+      새로 생성한다.
+
+      이전 프로젝트의 DOM이 남아있지 않게
+      하는 것이 중요함.
     */
 
-    if(
-      project.descriptionHtml
-    ){
+    if(key==='PORTFOLIO WEB'){
 
-      desc.innerHTML=
-        project.descriptionHtml;
+      desc.innerHTML=`
+
+        <div class="project-text">
+
+          <p style="line-height:1.75">
+            <b>강아지 건강 분석 일기 웹사이트</b>를 개발했습니다.
+            반려견의 일상과 건강 상태를 일기로 기록하면
+            AI가 내용을 분석하여 건강 이상 여부를 알려주는 서비스입니다.
+          </p>
+
+          <p style="line-height:1.75">
+            반려인이 쉽게 일기를 작성할 수 있도록 직관적인 UI를 설계하고,
+            AI 분석 결과를 명확하고 이해하기 쉬운 형태로 제공하는 데 중점을 두었습니다.
+          </p>
+
+        </div>
+
+        <div class="project-text">
+
+          <p style="line-height:1.75">
+            일기의 제목, 내용, 작성 날짜와 GPT API 분석 결과
+            (<b>mood</b>)를 함께 저장하도록 구현했습니다.
+          </p>
+
+          <div
+            style="
+              border:1.5px solid #39352f;
+              background:#f5ecd8;
+              padding:12px;
+              font:16px/1.7 monospace;
+              white-space:pre-wrap
+            "
+          >2025-10-19
+title: 강아지랑 산책한 날
+content: 우리 강아지 코코 저녁 먹고 나랑 산책했다.
+mood: green  ✓ 건강 상태 양호</div>
+
+        </div>
+
+      `;
 
     }else{
 
-      desc.innerHTML=
-        getDefaultProjectDescription(
-          openProjectKey
-        );
+      desc.innerHTML=`
+
+        <div class="project-text">
+
+          <p style="line-height:1.75">
+            ${defaultDescription}
+          </p>
+
+        </div>
+
+      `;
 
     }
 
 
-    renderProjectImages();
+    /*
+      저장된 설명이 있다면 현재 프로젝트에만 적용.
+      다른 프로젝트 내용과 섞이지 않음.
+    */
+
+    const saved=
+      projectDetails[key];
+
+
+    if(Array.isArray(saved)){
+
+      const areas=
+        desc.querySelectorAll(
+          '.project-text'
+        );
+
+
+      saved.forEach(
+        (html,i)=>{
+
+          if(areas[i]){
+
+            areas[i].innerHTML=
+              html;
+
+          }
+
+        }
+      );
+
+    }
+
+
+    /*
+      프로젝트 사진
+    */
+
+    renderProjectImage(key);
 
 
     $('#projectModal')
@@ -3303,46 +2889,43 @@ $$('.project').forEach(p=>{
 });
 
 
-/* =========================================================
+/* =========================
    프로젝트 이름 수정
-========================================================= */
+========================= */
 
-$('#editProjectName').onclick=()=>{
+$('#editProjectTitle').onclick=()=>{
 
-  const box=
-    $('#projectNameEditBox');
+  if(!openProjectKey)return;
 
 
-  $('#projectNameInput').value=
-    projectData[
+  const currentTitle=
+    getProjectTitle(
       openProjectKey
-    ].name;
+    );
 
 
-  box.classList.toggle('show');
+  const newTitle=
+    prompt(
+      '프로젝트 이름을 입력하세요.',
+      currentTitle
+    );
 
 
-  if(box.classList.contains('show')){
-
-    $('#projectNameInput').focus();
-
+  if(
+    newTitle===null
+  ){
+    return;
   }
 
-};
+
+  const clean=
+    newTitle.trim();
 
 
-$('#saveProjectName').onclick=()=>{
-
-  const newName=
-    $('#projectNameInput')
-      .value
-      .trim();
-
-
-  if(!newName){
+  if(!clean){
 
     toast(
-      '프로젝트 이름을 입력해 주세요!'
+      '프로젝트 이름을 입력해주세요.'
     );
 
     return;
@@ -3350,20 +2933,18 @@ $('#saveProjectName').onclick=()=>{
   }
 
 
-  projectData[
-    openProjectKey
-  ].name=
-    newName;
+  projectTitles[openProjectKey]=
+    clean;
 
 
-  saveProjectData();
+  saveProjectTitles();
 
 
-  renderProjectTitle();
+  $('#projectTitle').textContent=
+    clean;
 
 
-  $('#projectNameEditBox')
-    .classList.remove('show');
+  renderProjectCards();
 
 
   toast(
@@ -3373,9 +2954,9 @@ $('#saveProjectName').onclick=()=>{
 };
 
 
-/* =========================================================
+/* =========================
    프로젝트 설명 수정
-========================================================= */
+========================= */
 
 $('#editProjectDesc').onclick=()=>{
 
@@ -3383,15 +2964,7 @@ $('#editProjectDesc').onclick=()=>{
     $$('#projectDesc .project-text');
 
 
-  if(!areas.length){
-
-    toast(
-      '수정할 설명이 없습니다.'
-    );
-
-    return;
-
-  }
+  if(!areas.length)return;
 
 
   if(!projectEditMode){
@@ -3406,8 +2979,7 @@ $('#editProjectDesc').onclick=()=>{
       a.style.outline=
         '2px dashed #d77b63';
 
-      a.style.outlineOffset=
-        '4px';
+      a.style.outlineOffset='4px';
 
       a.style.background=
         '#fff4cb';
@@ -3418,9 +2990,9 @@ $('#editProjectDesc').onclick=()=>{
     areas[0].focus();
 
 
-    $('#editProjectDesc')
-      .textContent=
-        '✓ 설명 저장';
+    $('#editProjectDesc').textContent=
+      '✓ 설명 저장';
+
 
   }else{
 
@@ -3440,20 +3012,42 @@ $('#editProjectDesc').onclick=()=>{
     });
 
 
-    projectData[
-      openProjectKey
-    ].descriptionHtml=
-      [...areas]
-        .map(a=>a.outerHTML)
-        .join('');
+    /*
+      현재 프로젝트의 기존 데이터만 가져옴.
+      다른 프로젝트를 건드리지 않음.
+    */
+
+    const saved =
+      readStore(
+        'projectDetails',
+        {}
+      );
 
 
-    saveProjectData();
+    saved[openProjectKey]=
+      [...areas].map(
+        a=>a.innerHTML
+      );
 
 
-    $('#editProjectDesc')
-      .textContent=
-        '✎ 설명 수정';
+    localStorage.setItem(
+      'projectDetails',
+      JSON.stringify(saved)
+    );
+
+
+    /*
+      메모리에서도 즉시 업데이트.
+      그래서 닫았다가 바로 다시 열어도
+      수정한 내용이 유지됨.
+    */
+
+    projectDetails[openProjectKey]=
+      saved[openProjectKey];
+
+
+    $('#editProjectDesc').textContent=
+      '✎ 설명 수정';
 
 
     toast(
@@ -3465,98 +3059,125 @@ $('#editProjectDesc').onclick=()=>{
 };
 
 
-/* =========================================================
+/* =========================
    프로젝트 사진 추가
-========================================================= */
+========================= */
 
-$('#projectImageInput').onchange=async e=>{
+$('#addProjectPhoto').onclick=()=>{
 
-  const files=
-    [...e.target.files];
-
-
-  if(!files.length)return;
-
-
-  const project=
-    projectData[openProjectKey];
-
-
-  if(!project)return;
-
-
-  /*
-    선택한 사진들을 읽고
-    크기를 조금 줄여서 저장
-  */
-
-  for(const file of files){
-
-    if(!file.type.startsWith('image/')){
-      continue;
-    }
-
-
-    const reader=
-      new FileReader();
-
-
-    const src=
-      await new Promise(resolve=>{
-
-        reader.onload=
-          ()=>resolve(reader.result);
-
-        reader.readAsDataURL(file);
-
-      });
-
-
-    const compressed=
-      await compactImage(src);
-
-
-    project.images.push(
-      compressed
-    );
-
+  if(!openProjectKey){
+    return;
   }
 
 
-  saveProjectData();
+  $('#projectPhotoInput').value='';
 
-
-  renderProjectImages();
-
-
-  /*
-    input을 비워서
-    같은 사진을 다시 선택할 수 있도록 함
-  */
-
-  e.target.value='';
-
-
-  toast(
-    `${files.length}개의 사진이 추가되었습니다!`
-  );
+  $('#projectPhotoInput').click();
 
 };
 
 
-/* =========================================================
-   프로젝트 닫기
-========================================================= */
+$('#projectPhotoInput').onchange=e=>{
 
-$('#closeProject').onclick=()=>{
+  const file=
+    e.target.files[0];
+
+
+  if(!file){
+    return;
+  }
+
+
+  if(
+    !file.type.startsWith('image/')
+  ){
+
+    toast(
+      '이미지 파일만 추가할 수 있습니다.'
+    );
+
+    return;
+
+  }
+
+
+  const reader=
+    new FileReader();
+
+
+  reader.onload=()=>{
+
+    /*
+      화면에 바로 표시
+    */
+
+    projectImages[openProjectKey]=
+      reader.result;
+
+
+    /*
+      브라우저에 저장
+    */
+
+    localStorage.setItem(
+      'projectImages',
+      JSON.stringify(projectImages)
+    );
+
+
+    renderProjectImage(
+      openProjectKey
+    );
+
+
+    toast(
+      '프로젝트 사진이 저장되었습니다!'
+    );
+
+  };
+
+
+  reader.readAsDataURL(file);
+
+};
+
+
+/* =========================
+   프로젝트 닫기
+========================= */
+
+function closeProjectModal(){
 
   projectEditMode=false;
+
+
+  /*
+    혹시 설명 편집 중이었다면
+    편집 상태 초기화
+  */
+
+  $$('#projectDesc .project-text')
+    .forEach(a=>{
+
+      a.contentEditable='false';
+
+      a.style.outline='';
+
+      a.style.outlineOffset='';
+
+      a.style.background='';
+
+    });
 
 
   $('#projectModal')
     .classList.remove('show');
 
-};
+}
+
+
+$('#closeProject').onclick=
+  closeProjectModal;
 
 
 $('#projectModal').onclick=e=>{
@@ -3566,72 +3187,11 @@ $('#projectModal').onclick=e=>{
     e.currentTarget
   ){
 
-    projectEditMode=false;
-
-    e.currentTarget
-      .classList.remove('show');
+    closeProjectModal();
 
   }
 
 };
-
-
-/* =========================================================
-   포트폴리오 공유 링크 복사
-========================================================= */
-
-async function copyText(text){
-
-  try{
-
-    await navigator.clipboard.writeText(
-      text
-    );
-
-    toast(
-      '사진과 수정 내용이 포함된 링크가 복사되었습니다!'
-    );
-
-  }catch{
-
-    const a=
-      document.createElement('textarea');
-
-    a.value=text;
-
-    document.body.append(a);
-
-    a.select();
-
-    document.execCommand('copy');
-
-    a.remove();
-
-
-    toast(
-      '사진과 수정 내용이 포함된 링크가 복사되었습니다!'
-    );
-
-  }
-
-}
-
-
-$('#copyPage').onclick=async()=>{
-
-  /*
-    버튼을 누르면 현재 수정사항을
-    공유 링크에 전부 넣음
-  */
-
-  const url=
-    await makeShareUrl();
-
-
-  await copyText(url);
-
-};
-
 
 </script>
 
